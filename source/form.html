@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="logo page-header__logo">
+        <img class="page-header__logo-image--short" src="img/logotype-mobile.svg" width="74" height="23" alt="Мобильное приложение PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photos.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item--current">
+              <a>
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Конкурс от PINK: выиграй безбашенное путешествие</h1>
+      <section class="page-title">
+        <div class="page-title__wrapper">
+          <header class="page-title__header">
+            <h2 class="page-title__slogan">
+              Конкурс на самое безбашенное путешествие с Пинк
+            </h2>
+
+          </header>
+        </div>
+      </section>
+      <section class="registration">
+        <h2 class="visually-hidden">
+          Форма регистрации для участия в конкурсе
+        </h2>
+        <p class="highligt-text registration__highligt-text">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <form method="get" action="https://echo.htmlacademy.ru" class="registration__form">
+          <fieldset class="registration__full-name">
+            <legend class="visually-hidden">Фамилия, имя, отчество:</legend>
+            <label class="input-text registration__input-text registration__input-text--first-name">
+              <span>
+                Фамилия:
+              </span>
+              <input type="text" name="first-name" placeholder="Укажите фамилию *" required>
+            </label>
+            <label class="input-text registration__input-text registration__input-text--second-name">
+              <span>
+                Имя:
+              </span>
+              <input type="text" name="second-name" placeholder="Введите ваше имя *" required>
+            </label>
+            <label class="input-text registration__input-text registration__input-text--middle-name">
+              <span>
+                Отчество:
+              </span>
+              <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            </label>
+          </fieldset>
+          <fieldset class="registration__actions">
+            <legend class="legend-text registration__legend-text">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <label class="action-checkbox registration__action-checkbox">
+              <span>
+                Сделал селфи с акулой
+              </span>
+              <input type="checkbox" name="Сделал селфи с акулой" checked>
+            </label>
+            <label class="action-checkbox registration__action-checkbox">
+              <span>
+                Обгорел на пляже
+              </span>
+              <input type="checkbox" name="Обгорел на пляже" checked>
+            </label>
+            <label class="action-checkbox registration__action-checkbox">
+              <span>
+                Видел Чака Норриса
+              </span>
+              <input type="checkbox" name="Видел Чака Норриса">
+            </label>
+            <label class="action-checkbox registration__action-checkbox">
+              <span>
+                Накупил сувениров
+              </span>
+              <input type="checkbox" name="Накупил сувениров">
+            </label>
+            <label class="action-checkbox registration__action-checkbox">
+              <span>
+                Удержал башню
+              </span>
+              <input type="checkbox" name="Удержал башню">
+            </label>
+            <label class="action-checkbox registration__action-checkbox">
+              <span>
+                Разгромил отель
+              </span>
+              <input type="checkbox" name="Разгромил отель">
+            </label>
+          </fieldset>
+          <fieldset class="registration__phone-email">
+            <legend class="visually-hidden">Укажите номер телефона и адрес почты</legend>
+            <label class="input-text registration__input-text registration__input-text--phone">
+              <span>
+                Номер телефона:
+              </span>
+              <input type="text" name="phone" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="input-text registration__input-text registration__input-text--email">
+              <span>
+                Адрес почты:
+              </span>
+              <input type="text" name="email" placeholder="Введите почту *" required>
+            </label>
+          </fieldset>
+          <fieldset class="registration__application">
+            <legend class="legend-text registration__legend-text">
+              С каким приложением путешествовали?
+            </legend>
+            <label class="application-radio registration__application-radio">
+              <span>
+                Pink для iOS
+              </span>
+              <input type="radio" name="application-radio" value="Pink для iOS" checked>
+            </label>
+            <label class="application-radio registration__application-radio">
+              <span>
+                Pink на Andriod
+              </span>
+              <input type="radio" name="application-radio" value="Pink на Andriod" checked>
+            </label>
+            <label class="application-radio registration__application-radio">
+              <span>
+                Windows Phone
+              </span>
+              <input type="radio" name="application-radio" value="Windows Phone" checked>
+            </label>
+          </fieldset>
+          <fieldset class="registration__notice">
+            <legend class="legend-text registration__legend-text">Опишите свои эмоции</legend>
+            <textarea name="notice-text" class="notice-text registration__notice-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button type="submit" class="button button-modal-feedback">
+            Отправить
+          </button>
+          <small class="required-fields-text"><span>*</span> - обязательные поля</small>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrapper-footer">
+        <a class="logo page-footer__logo">
+          <img class="page-footer__logo-image--full-pink" src="img/logotype-mobile-full.svg" width="145" height="40" alt="Мобильное приложение PINK">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
