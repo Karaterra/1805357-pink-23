@@ -45,15 +45,15 @@
     </header>
     <main class="page-main">
       <section class="page-header">
-            <h2 class="page-header__slogan">
-              Конкурс на самое безбашенное путешествие с Пинк
-            </h2>
+        <h2 class="page-header__slogan">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h2>
       </section>
       <section class="registration">
         <h2 class="title registration__title">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </h2>
-        <form method="get" action="https://echo.htmlacademy.ru" class="registration__form">
+        <form method="post" action="https://echo.htmlacademy.ru" class="registration__form">
           <fieldset class="registration__fieldset">
             <legend class="visually-hidden">Фамилия, имя, отчество:</legend>
             <label class="input-text registration__input-text">
@@ -75,7 +75,7 @@
               <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class="registration__fieldset--bg-gray">
+          <fieldset class="registration__fieldset registration__fieldset--bg-gray">
             <legend class="legend-text registration__legend-text">
               Ваши безбашенные достижения в путешествии
             </legend>
@@ -83,37 +83,37 @@
               <span>
                 Сделал селфи с акулой
               </span>
-              <input type="checkbox" name="Сделал селфи с акулой" checked>
+              <input type="checkbox" name="my-action" value="Сделал селфи с акулой" checked>
             </label>
             <label class="action-checkbox registration__action-checkbox">
               <span>
                 Обгорел на пляже
               </span>
-              <input type="checkbox" name="Обгорел на пляже" checked>
+              <input type="checkbox" name="my-action" value="Обгорел на пляже" checked>
             </label>
             <label class="action-checkbox registration__action-checkbox">
               <span>
                 Видел Чака Норриса
               </span>
-              <input type="checkbox" name="Видел Чака Норриса">
+              <input type="checkbox" name="my-action" value="Видел Чака Норриса">
             </label>
             <label class="action-checkbox registration__action-checkbox">
               <span>
                 Накупил сувениров
               </span>
-              <input type="checkbox" name="Накупил сувениров">
+              <input type="checkbox" name="my-action" value="Накупил сувениров">
             </label>
             <label class="action-checkbox registration__action-checkbox">
               <span>
                 Удержал башню
               </span>
-              <input type="checkbox" name="Удержал башню">
+              <input type="checkbox" name="my-action" value="Удержал башню">
             </label>
             <label class="action-checkbox registration__action-checkbox">
               <span>
                 Разгромил отель
               </span>
-              <input type="checkbox" name="Разгромил отель">
+              <input type="checkbox" name="my-action" value="Разгромил отель">
             </label>
           </fieldset>
           <fieldset class="registration__fieldset">
@@ -131,7 +131,7 @@
               <input type="email" name="email" placeholder="Введите почту *" required>
             </label>
           </fieldset>
-          <fieldset class="registration__fieldset--bg-gray">
+          <fieldset class="registration__fieldset registration__fieldset--bg-gray">
             <legend class="legend-text registration__legend-text">
               С каким приложением путешествовали?
             </legend>
@@ -163,28 +163,6 @@
           </button>
           <small class="required-fields-text registration__required-fields-text"><span>*</span> - обязательные поля</small>
         </form>
-      </section>
-      <section class="modal-window page-main__modal-window--alert">
-        <h2 class="modal-window__title">
-          Что-то пошло не так!
-        </h2>
-        <p class="modal-window__text">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
-        <button type="submit" class="button modal-window__button--ok">
-          OK
-        </button>
-      </section>
-      <section class="modal-window page-main__modal-window--confirm">
-        <h2 class="modal-window__title">
-          Ваша заявка отправлена
-        </h2>
-        <p class="modal-window__text">
-          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
-        </p>
-        <button type="submit" class="button modal-window__button--close">
-          Закрыть окно
-        </button>
       </section>
     </main>
     <footer class="page-footer">
@@ -236,5 +214,27 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window">
+      <h2 class="modal-window__title">
+        Что-то пошло не так!
+      </h2>
+      <p class="modal-window__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button type="button" class="button modal-window__button">
+        OK
+      </button>
+    </div>
+    <div class="modal-window">
+      <h2 class="modal-window__title">
+        Ваша заявка отправлена
+      </h2>
+      <p class="modal-window__text">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+      </p>
+      <button type="button" class="button modal-window__button">
+        Закрыть окно
+      </button>
+    </div>
   </body>
 </html>
