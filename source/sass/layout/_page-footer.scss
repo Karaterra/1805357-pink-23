@@ -1,0 +1,24 @@
+.page-footer {
+  min-width: 320px;
+  background: var(--basic-white);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  &__logo {
+    margin: 40px 0 41px 0;
+  }
+
+  &__social {
+    margin: 0 auto;
+    margin-bottom: 41px;
+    padding: 0;
+  }
+
+  &__copyright {
+    margin: 41px 0 40px 0;
+    padding: 0;
+  }
+}

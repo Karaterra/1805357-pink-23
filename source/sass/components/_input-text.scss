@@ -1,0 +1,36 @@
+.input-text {
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  & span {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--basic-red);
+    text-transform: uppercase;
+    margin: 0 20px 0 43px;
+  }
+
+  & input[type="text"],
+  [type="email"],
+  [type="tel"] {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--basic-text);
+    flex-grow: 1;
+    margin: 9px 22px 20px 22px;
+    padding: 15px 0 16px 20px;
+    width: 100%;
+    border: 2px solid var(--basic-gray);
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+}

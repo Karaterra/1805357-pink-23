@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 134px;
+  min-height: 34px;
+  padding: 0;
+
+  &__text {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-text);
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  &__link {
+    background: none;
+    margin: 0 0 0 15px;
+  }
+}

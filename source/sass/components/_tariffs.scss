@@ -1,0 +1,13 @@
+.tariffs {
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--basic-gray);
+  padding-top: 79px;
+  padding-bottom: 49px;
+  min-width: 320px;
+
+  &__slider {
+    margin: 0 auto;
+    margin-bottom: 49px;
+  }
+}

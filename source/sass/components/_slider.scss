@@ -1,0 +1,49 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 20px 0 20px;
+  }
+
+  &__name {
+    margin: 0 auto 30px auto;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-align: center;
+  }
+
+  &__age-profession {
+    margin: 0 auto 0 auto;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 0 34px 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-align: center;
+  }
+}

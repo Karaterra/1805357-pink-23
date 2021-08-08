@@ -1,0 +1,33 @@
+input::-moz-placeholder {
+  color: var(--basic-text);
+  opacity: 1;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+textarea::-moz-placeholder {
+  color: var(--basic-text);
+  opacity: 1;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  color: var(--basic-text);
+  opacity: 1;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: var(--basic-text);
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: var(--basic-text);
+}

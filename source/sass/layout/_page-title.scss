@@ -1,0 +1,95 @@
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  &__wrapper {
+    background: url("../img/hand_smartphone.png") no-repeat bottom center;
+    min-height: 396px;
+    min-width: 320px;
+    width: 100%;
+  }
+
+  &__slogan {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--basic-white);
+    display: block;
+    margin: 29px 20px 0 20px;
+    text-align: center;
+    align-self: center;
+
+    &--contest {
+      margin-bottom: 84px;
+      line-height: 33px;
+    }
+
+    &--registration {
+      margin-bottom: 51px;
+      line-height: 33px;
+    }
+  }
+
+  &__downloads {
+    min-width: 320px;
+    width: 100%;
+    background: var(--basic-deepwater);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 28px 20px 32px 20px;
+    padding: 17px 35px;
+    border: solid 3px var(--basic-white);
+    border-radius: 29px;
+    background: transparent;
+    text-align: center;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--basic-white);
+    box-sizing: border-box;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  &__platform-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-content: space-between;
+    margin: 0 58px 28px 58px;
+  }
+
+  & li {
+    align-self: center;
+    margin-right: 35px;
+  }
+
+  & li:last-child {
+    margin-right: 0;
+  }
+
+  &__annotation {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-white);
+    display: block;
+    margin: 0 20px 38px 20px;
+    text-align: center;
+    min-width: 280px;
+  }
+}

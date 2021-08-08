@@ -1,0 +1,78 @@
+.catalog-photo {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  &__wrapper-text {
+    background: var(--basic-gray);
+    margin: 0;
+    padding: 26px 17px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+
+    &--panorama {
+      margin: 0 20px;
+    }
+  }
+
+  &__username {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-text);
+    margin-right: 3px;
+    flex: 0 1 content;
+  }
+
+  &__time-creation {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--basic-text);
+    text-transform: uppercase;
+    flex: 1 0 auto;
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-text);
+    margin-bottom: 25px;
+    flex: 1 0 100%;
+  }
+
+  &__like {
+    margin-right: 18px;
+    flex: 0 0 auto;
+  }
+
+  &__like-count {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--basic-red);
+    text-transform: uppercase;
+    flex: 1 0 auto;
+  }
+}

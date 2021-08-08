@@ -1,0 +1,27 @@
+.page-header {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+
+  &__logo {
+    width: 74px;
+    height: 23px;
+    flex-grow: 1;
+    margin: 22px 0 21px 20px;
+  }
+
+  &__toggle {
+    width: 50px;
+    height: 24px;
+    border: none;
+    background: none;
+    align-self: flex-end;
+    margin: 21px 20px 21px 0;
+  }
+}
