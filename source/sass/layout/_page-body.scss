@@ -1,7 +1,9 @@
 .page-body {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 400;
-  background: var(--basic-white) url("../img/back-660.jpg") no-repeat center top;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-text;
   margin: 0 auto;
 }

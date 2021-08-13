@@ -1,13 +1,16 @@
 .tariffs {
-  margin: 0 auto;
-  padding: 0;
-  background-color: var(--basic-gray);
+  background-color: $basic-gray;
   padding-top: 79px;
   padding-bottom: 49px;
   min-width: 320px;
+  position: relative;
+}
 
-  &__slider {
-    margin: 0 auto;
-    margin-bottom: 49px;
-  }
+.tariffs__slider {
+  margin-bottom: 49px;
+}
+
+.tariffs__triangle {
+  position: absolute;
+  top: 0;
 }

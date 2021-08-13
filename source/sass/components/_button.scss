@@ -2,11 +2,14 @@
   margin: 0 auto;
   padding: 23px;
   min-width: 276px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: bold;
+  min-height: 59px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+  background: $basic-button;
+  border: 2px solid $basic-button;
+  border-radius: 1px;
+  color: $basic-white;
 }

@@ -2,77 +2,47 @@
   min-width: 320px;
   width: 100%;
   margin: 0 0 20px 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
 
-  &__wrapper-text {
-    background: var(--basic-gray);
-    margin: 0;
-    padding: 26px 17px;
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-
-    &--panorama {
-      margin: 0 20px;
-    }
+  img {
+    display: block;
   }
+}
 
-  &__username {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--basic-text);
-    margin-right: 3px;
-    flex: 0 1 content;
-  }
+.catalog-photo__wrapper-text {
+  background: $basic-gray;
+  margin: 0;
+  padding: 26px 17px;
 
-  &__time-creation {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 24px;
-    color: var(--basic-text);
-    text-transform: uppercase;
-    flex: 1 0 auto;
-    margin-bottom: 6px;
+  &--panorama {
+    margin: 0 20px;
   }
+}
 
-  &__text {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--basic-text);
-    margin-bottom: 25px;
-    flex: 1 0 100%;
-  }
+.catalog-photo__username {
+  font-weight: 700;
+  margin-right: 3px;
+}
 
-  &__like {
-    margin-right: 18px;
-    flex: 0 0 auto;
-  }
+.catalog-photo__time-creation {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
 
-  &__like-count {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    color: var(--basic-red);
-    text-transform: uppercase;
-    flex: 1 0 auto;
-  }
+.catalog-photo__text {
+  margin-bottom: 25px;
+}
+
+.catalog-photo__like {
+  margin-right: 18px;
+  margin-top: 6px;
+  float: left;
+}
+
+.catalog-photo__like-count {
+  font-size: 12px;
+  color: $basic-red;
+  text-transform: uppercase;
+  vertical-align: middle;
 }

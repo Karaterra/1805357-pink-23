@@ -1,29 +1,30 @@
 .social {
-  margin: 0;
-  padding: 0;
-  min-width: 178px;
+  min-width: 280px;
   min-height: 54px;
+  display: inline-block;
+  text-align: center;
+}
 
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    align-content: space-between;
+.social__list {
+  @include list-none;
+  text-align: center;
+  display: inline-block;
+  min-width: 280px;
 
-    & li {
-      align-self: center;
-      margin-right: 8px;
-    }
-
-    &:last-child {
-      align-self: center;
-      margin-right: 0;
-    }
+  li {
+    display: inline;
+    margin-right: 8px;
   }
 
-  &__link {
-    background: none;
+  a {
+    text-decoration: none;
   }
+
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  background: none;
 }

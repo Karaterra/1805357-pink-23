@@ -1,36 +1,23 @@
 .input-text {
-  min-width: 320px;
-  width: 100%;
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  display: block;
 
-  & span {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+  span {
     line-height: 30px;
-    color: var(--basic-red);
+    color: $basic-red;
     text-transform: uppercase;
-    margin: 0 20px 0 43px;
+    margin-left: 21px;
   }
 
-  & input[type="text"],
-  [type="email"],
-  [type="tel"] {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  input {
     font-size: 18px;
-    line-height: 100%;
-    color: var(--basic-text);
-    flex-grow: 1;
-    margin: 9px 22px 20px 22px;
+    line-height: 30px;
+    color: $basic-text;
     padding: 15px 0 16px 20px;
-    width: 100%;
-    border: 2px solid var(--basic-gray);
+    border: 2px solid $basic-gray;
     border-radius: 1px;
-    box-sizing: border-box;
+    min-width: 280px;
+    width: 100%;
+    display: block;
+    margin-bottom: 21px;
   }
 }

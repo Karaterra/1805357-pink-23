@@ -1,112 +1,94 @@
 .registration {
   margin: 0 auto;
-  padding: 0;
+  padding-top: 51px;
   min-width: 320px;
+  background: $basic-white;
+  display: block;
+}
+
+.registration__title {
+  margin: 0 20px 55px 20px;
+  line-height: 30px;
+  color: $basic-text;
+  text-align: center;
+  display: block;
+}
+
+.registration__form {
+  min-width: 320px;
+  display: block;
+}
+
+.registration__fieldset {
+  margin: 0;
+  border: none;
+  background: $basic-white;
+  display: block;
+  position: relative;
+  min-width: 280px;
+
+  &--bg-gray {
+    background: $basic-gray;
+    padding-top: 145px;
+  }
+
+  &--second {
+    margin-top: 42px;
+    margin-bottom: 44px;
+  }
+
+  &:last-child {
+    margin-top: 42px;
+    margin-bottom: 44px;
+    padding-top: 44px;
+  }
+}
+
+.registration__input-text {
+  margin: 0 auto;
+}
+
+.registration__legend-text {
+  margin: 0 auto;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.registration__notice-text {
+  min-width: 280px;
+  min-height: 197px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-text;
   width: 100%;
-  background: var(--basic-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+}
 
-  &__title {
-    margin: 54px 20px 40px 20px;
-    padding: 0;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: var(--basic-text);
-    text-align: center;
-  }
+.registration__notice-text-wraper {
+  min-width: 280px;
+  margin-top: 100px;
+  margin-bottom: 52px;
+  display: block;
+}
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    min-width: 320px;
-    width: 100%;
-  }
+.registration__button {
+  margin-top: 52px;
+  margin-bottom: 10px;
+  display: block;
+}
 
-  &__fieldset {
-    min-width: 320px;
-    width: 100%;
-    border: none;
-    background: var(--basic-white);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    position: relative;
+.registration__required-fields-text {
 
-    &--bg-gray {
-      background: var(--basic-gray);
-      padding-top: 115px;
-    }
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-text;
+  text-align: center;
+  margin: 36px 0 20px 0;
+  display: block;
 
-    &--second {
-      margin-top: 42px;
-      margin-bottom: 44px;
-    }
-
-    &:last-child {
-      margin-top: 42px;
-      margin-bottom: 44px;
-      padding-top: 44px;
-    }
-  }
-
-  &__input-text {
-    margin: 0 auto;
-  }
-
-  &__legend-text {
-    text-align: center;
-    width: 70%;
-    min-width: 220px;
-    position: absolute;
-    top: 44px;
-  }
-
-  &__action-checkbox {
-    margin: 0 auto;
-  }
-
-  &__application-radio {
-    margin: 0 auto;
-  }
-
-  &__notice-text {
-    min-width: 280px;
-    min-height: 197px;
-    width: 90%;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--basic-text);
-  }
-
-  &__notice-text-wraper {
-    min-width: 280px;
-    width: 100%;
-    padding: 20px;
-    margin: 62px 22px 44px 22px;
-    align-self: center;
-    text-align: center;
-  }
-
-  &__button {
-    background: var(--basic-button);
-    border: 2px solid var(--basic-button);
-    border-radius: 1px;
-    color: var(--basic-white);
-    margin-top: 52px;
-    margin-bottom: 10px;
+  span {
+    color: $basic-red;
   }
 }

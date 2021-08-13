@@ -1,10 +1,10 @@
 .reviews {
   min-width: 320px;
-  background-color: var(--basic-white);
+  background-color: $basic-white;
   margin: 0 auto;
   padding: 0;
+}
 
-  &__slider {
-    margin: 49px 20px 34px 20px;
-  }
+.reviews__slider {
+  margin: 49px 0 34px 0;
 }

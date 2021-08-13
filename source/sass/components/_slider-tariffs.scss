@@ -2,108 +2,79 @@
   min-width: 320px;
   overflow: hidden;
   margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: center;
 
-  &__table {
-    min-width: 832px;
-    min-height: 280px;
-    display: table;
-    border-spacing: 1px;
-    margin: 0 auto;
-    margin-bottom: 49px;
+  span {
+    line-height: 100%;
   }
+}
 
-  & tbody {
-    margin: 0;
-    padding: 0;
-  }
+.slider-tariffs__table {
+  min-width: 832px;
+  min-height: 280px;
+  display: table;
+  border-spacing: 1px;
+  margin: 0 auto;
+  margin-bottom: 49px;
 
-  & tr {
-    display: table-row;
-    margin: 0;
-    padding: 0;
-  }
-
-  & th {
+  th {
     display: table-cell;
-    margin: 0;
-    background-color: var(--basic-deepwater);
-    padding: 0;
-    color: var(--basic-white);
-    height: 94px;
+    background-color: $basic-deepwater;
+    color: $basic-white;
+    min-height: 94px;
     vertical-align: top;
 
     &:first-child {
-      border: 2px solid var(--basic-deepwater);
+      border: 2px solid $basic-deepwater;
       border-right: none;
       border-bottom: none;
       border-radius: 1px 0 0 0;
     }
 
     &:last-child {
-      border: 2px solid var(--basic-deepwater);
+      border: 2px solid $basic-deepwater;
       border-left: none;
       border-bottom: none;
       border-radius: 0 1px 0 0;
     }
 
     &[data-stripe] {
-      background: var(--basic-deepwater) url("../img/data-stripe-hit.svg") no-repeat left top;
+      background: $basic-deepwater url("../img/data-stripe-hit.svg") no-repeat left top;
     }
   }
 
-  &__name {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin: 19px auto 15px auto;
-    display: block;
-  }
-
-  &__cost {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin: 0 auto 35px auto;
-    display: block;
-  }
-
-  & span {
-    line-height: 100%;
-  }
-
-  & td {
+  td {
     display: table-cell;
-    margin: 0;
-    background-color: var(--basic-white);
+    background-color: $basic-white;
     padding: 24px 20px 25px 20px;
-    color: var(--basic-text);
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
-    box-sizing: border-box;
-
-    &[data-stripe="в наличии"] {
-      background: var(--basic-white) url("../img/yes.svg") no-repeat right center;
-      background-position: 95% 50%;
-    }
-
-    &[data-stripe="нет в наличии"] {
-      background: var(--basic-white) url("../img/no.svg") no-repeat right center;
-      background-position: 95% 50%;
-    }
   }
+}
+
+.slider-tariffs__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 19px auto 15px auto;
+  display: block;
+}
+
+.slider-tariffs__cost {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0 auto 35px auto;
+  display: block;
+}
+
+.slider-tariffs__td-yes {
+  background: $basic-white url("../img/yes.svg") no-repeat right center;
+  background-position: 95% 50%;
+}
+
+.slider-tariffs__td-no {
+  background: $basic-white url("../img/no.svg") no-repeat right center;
+  background-position: 95% 50%;
 }
