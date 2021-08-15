@@ -1,0 +1,92 @@
+.registration {
+  margin: 0 auto;
+  padding-top: 51px;
+  min-width: 320px;
+  display: block;
+}
+
+.registration__title {
+  margin: 0 20px 55px 20px;
+  line-height: 30px;
+  color: $basic-text;
+  text-align: center;
+  display: block;
+}
+
+.registration__form {
+  min-width: 320px;
+  display: block;
+}
+
+.registration__fieldset {
+  margin: 0;
+  border: none;
+  background-color: $basic-white;
+  display: block;
+  position: relative;
+  min-width: 280px;
+
+  &--bg-gray {
+    background-color: $basic-gray;
+    padding-top: 145px;
+  }
+
+  &--second {
+    margin-top: 42px;
+    margin-bottom: 44px;
+  }
+
+  &:last-child {
+    margin-top: 42px;
+    margin-bottom: 44px;
+    padding-top: 44px;
+  }
+}
+
+.registration__input-text {
+  margin: 0 auto;
+}
+
+.registration__legend-text {
+  margin: 0 auto;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.registration__notice-text {
+  min-width: 280px;
+  min-height: 197px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-text;
+  width: 100%;
+}
+
+.registration__notice-text-wraper {
+  min-width: 280px;
+  margin-top: 100px;
+  margin-bottom: 52px;
+  display: block;
+}
+
+.registration__button {
+  margin-top: 52px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.registration__required-fields-text {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-text;
+  text-align: center;
+  margin: 36px 0 20px 0;
+  display: block;
+
+  span {
+    color: $basic-red;
+  }
+}

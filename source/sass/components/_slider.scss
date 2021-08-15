@@ -1,0 +1,34 @@
+.slider {
+  min-width: 320px;
+}
+
+.slider__list {
+  @include list-none;
+}
+
+.slider__item {
+  margin: 0 auto;
+}
+
+.slider__name {
+  margin: 0 auto 30px auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-black;
+  text-align: center;
+}
+
+.slider__age-profession {
+  margin: 0 auto;
+  line-height: 30px;
+  color: $basic-black;
+  text-align: center;
+}
+
+.slider__text {
+  margin: 0 20px 34px 20px;
+  line-height: 30px;
+  color: $basic-black;
+  text-align: center;
+}

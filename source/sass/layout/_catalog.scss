@@ -1,0 +1,31 @@
+.catalog {
+  min-width: 320px;
+  width: 100%;
+  padding-top: 52px;
+}
+
+.catalog__title {
+  margin: 0 20px 60px 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.catalog__list {
+  @include list-none;
+}
+
+.catalog__item {
+  padding: 0 20px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+  }
+
+  &--panorama {
+    padding: 0;
+  }
+}

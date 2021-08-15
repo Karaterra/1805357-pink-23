@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input::-moz-placeholder,
+::-moz-placeholder {
+  color: $basic-text;
+  opacity: 1;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  font-family: $main-font;
+  color: $basic-text;
+  opacity: 1;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: $basic-text;
+  opacity: 1;
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: $basic-text;
+  opacity: 1;
+}

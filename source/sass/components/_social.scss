@@ -1,0 +1,30 @@
+.social {
+  min-width: 280px;
+  min-height: 54px;
+  display: inline-block;
+  text-align: center;
+}
+
+.social__list {
+  @include list-none;
+  text-align: center;
+  display: inline-block;
+  min-width: 280px;
+
+  li {
+    display: inline;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.social__link {
+  background: none;
+}

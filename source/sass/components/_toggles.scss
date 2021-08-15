@@ -1,0 +1,22 @@
+.toggles {
+  min-width: 320px;
+  text-align: center;
+}
+
+.toggles__toggle {
+  min-width: 16px;
+  border: none;
+  overflow: hidden;
+  background: none;
+  opacity: 0.3;
+  margin-right: 15px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--current {
+    opacity: 1;
+  }
+}
