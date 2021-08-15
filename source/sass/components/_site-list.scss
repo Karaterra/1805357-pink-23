@@ -7,8 +7,8 @@
   min-height: 63px;
   margin: 0 auto;
   padding: 23px 0;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 1), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  background: $basic-text;
+  box-shadow: 0 -1px 0 $basic-black, inset 0 1px 0 $basic-border-light;
+  background-color: $basic-text;
 
   a {
     display: block;

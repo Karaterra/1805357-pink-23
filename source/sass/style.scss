@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import "base/normalize";
 @import "base/_global.scss";
+@import "base/_mixin.scss";
 @import "base/_colors.scss";
 @import "base/_fonts.scss";
 @import "base/_placeholders.scss";
@@ -9,7 +10,6 @@
 @import "layout/_page-header.scss";
 @import "layout/_main-nav.scss";
 @import "components/_site-list.scss";
-@import "layout/_page-main.scss";
 @import "layout/_page-title.scss";
 @import "layout/_features.scss";
 @import "components/_title.scss";

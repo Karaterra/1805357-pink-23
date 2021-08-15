@@ -1,8 +1,7 @@
 .contacts {
   min-width: 320px;
-  background: $basic-white;
+  background-color: $basic-white;
   margin: 0 auto;
-  position: relative;
 }
 
 .contacts__title {
@@ -29,11 +28,12 @@
 
 .contacts__triangle {
   position: absolute;
+  top: 0;
 }
 
 .contacts__point {
   position: absolute;
-  top: 530px;
+  top: 70px;
   left: 45%;
 }
 
@@ -42,4 +42,5 @@
   text-align: center;
   min-width: 320px;
   width: 100%;
+  position: relative;
 }

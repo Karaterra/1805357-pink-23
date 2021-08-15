@@ -11,29 +11,23 @@
 .slider-tariffs__table {
   min-width: 832px;
   min-height: 280px;
-  display: table;
   border-spacing: 1px;
   margin: 0 auto;
   margin-bottom: 49px;
 
   th {
-    display: table-cell;
     background-color: $basic-deepwater;
     color: $basic-white;
     min-height: 94px;
     vertical-align: top;
 
     &:first-child {
-      border: 2px solid $basic-deepwater;
-      border-right: none;
-      border-bottom: none;
+      border-left: 2px solid $basic-deepwater;
       border-radius: 1px 0 0 0;
     }
 
     &:last-child {
-      border: 2px solid $basic-deepwater;
-      border-left: none;
-      border-bottom: none;
+      border-right: 2px solid $basic-deepwater;
       border-radius: 0 1px 0 0;
     }
 
@@ -43,7 +37,6 @@
   }
 
   td {
-    display: table-cell;
     background-color: $basic-white;
     padding: 24px 20px 25px 20px;
     line-height: 30px;

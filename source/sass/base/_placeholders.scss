@@ -1,18 +1,12 @@
-input::-moz-placeholder {
+input::-moz-placeholder,
+::-moz-placeholder {
   color: $basic-text;
-  opacity: 1;
-}
-
-textarea::-moz-placeholder {
-  font-family: $main-font;
-  color: $basic-text;
-  font-size: 18px;
-  line-height: 30px;
   opacity: 1;
 }
 
 /* Chrome, Firefox, Opera, Safari 10.1+ */
 ::placeholder {
+  font-family: $main-font;
   color: $basic-text;
   opacity: 1;
 }

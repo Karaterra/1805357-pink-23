@@ -2,7 +2,6 @@
   margin: 0 auto;
   padding-top: 51px;
   min-width: 320px;
-  background: $basic-white;
   display: block;
 }
 
@@ -22,13 +21,13 @@
 .registration__fieldset {
   margin: 0;
   border: none;
-  background: $basic-white;
+  background-color: $basic-white;
   display: block;
   position: relative;
   min-width: 280px;
 
   &--bg-gray {
-    background: $basic-gray;
+    background-color: $basic-gray;
     padding-top: 145px;
   }
 
@@ -80,7 +79,6 @@
 }
 
 .registration__required-fields-text {
-
   line-height: 30px;
   text-transform: uppercase;
   color: $basic-text;
