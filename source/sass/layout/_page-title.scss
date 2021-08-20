@@ -1,13 +1,12 @@
 .page-title {
   margin: 0 auto;
-  min-height: 171px;
+  min-height: 396px;
   padding-top: 36px;
   display: block;
+  background: url("../img/hand-smartphone-320.png") no-repeat center 140px;
 }
 
 .page-title__wrapper {
-  background: url("../img/hand-smartphone.png") no-repeat bottom center;
-  min-height: 396px;
   min-width: 320px;
   width: 100%;
 }
@@ -19,7 +18,12 @@
   color: $basic-white;
   display: block;
   margin: 0 20px;
+  padding-bottom: 330px;
   text-align: center;
+
+  br:first-child {
+    display: none;
+  }
 
   &--contest {
     margin-bottom: 84px;
@@ -81,4 +85,83 @@
   margin: 28px 20px 0 20px;
   text-align: center;
   min-width: 280px;
+}
+
+@include tablet {
+  .page-title {
+    min-height: 396px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url("../img/hand-smartphone-760.png") no-repeat 60% 94px;
+    padding-top: 0;
+  }
+
+  .page-title__slogan {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-top: 102px;
+    padding-bottom: 39px;
+    font-size: 40px;
+    line-height: 48px;
+
+    br:first-child {
+      display: block;
+    }
+  }
+
+  .page-title__downloads {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: none;
+    padding-bottom: 0;
+  }
+
+  .page-title__wrapper {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .page-title__button {
+    padding: 17px 48px;
+  }
+
+  .page-title__annotation {
+    padding-bottom: 119px;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+@include desktop {
+  .page-title {
+    min-height: 396px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url("../img/hand-smartphone-1200.png") no-repeat 90% 140px;
+    padding-top: 0;
+  }
+
+  .page-title__slogan {
+    padding-top: 114px;
+    padding-bottom: 51px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .page-title__button {
+    font-size: 21px;
+    line-height: 18px;
+    margin-bottom: 67px;
+    margin-top: 0;
+  }
+
+  .page-title__annotation {
+    padding-top: 58px;
+    padding-bottom: 55px;
+    margin: 0;
+  }
+
+  .page-title__downloads {
+    padding-bottom: 0;
+  }
 }

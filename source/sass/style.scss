@@ -1,9 +1,10 @@
 @charset 'utf-8';
 @import "base/normalize";
-@import "base/_global.scss";
-@import "base/_mixin.scss";
 @import "base/_colors.scss";
 @import "base/_fonts.scss";
+@import "base/_global.scss";
+@import "base/_breakpoints.scss";
+@import "base/_mixin.scss";
 @import "layout/_page-body.scss";
 @import "base/_visually-hidden.scss";
 @import "layout/_page-header.scss";

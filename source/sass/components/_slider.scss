@@ -1,5 +1,6 @@
 .slider {
   min-width: 320px;
+  margin-top: 50px;
 }
 
 .slider__list {
@@ -11,7 +12,7 @@
 }
 
 .slider__name {
-  margin: 0 auto 30px auto;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -20,10 +21,7 @@
 }
 
 .slider__age-profession {
-  margin: 0 auto;
-  line-height: 30px;
-  color: $basic-black;
-  text-align: center;
+  display: none;
 }
 
 .slider__text {
@@ -31,4 +29,107 @@
   line-height: 30px;
   color: $basic-black;
   text-align: center;
+}
+
+.slider__next-pre-buttons {
+  display: none;
+}
+
+@include tablet {
+  .slider__item {
+    margin-top: 109px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider__age-profession {
+    display: block;
+    order: 3;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .slider__name {
+    display: block;
+    order: 2;
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider__text {
+    display: block;
+    order: 1;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider__next-pre-buttons {
+    display: none;
+  }
+}
+
+@include desktop {
+  .slider__list {
+    background: url("../img/quotes.svg") no-repeat center 72px;
+    padding-top: 193px;
+    padding-left: 256px;
+    padding-right: 256px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+  .slider__next-pre-buttons {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+
+    a {
+      position: absolute;
+      left: 10%;
+      top: 0;
+    }
+
+    a:last-child {
+      position: absolute;
+      transform: rotate(180deg);
+      left: 90%;
+      top: -8px;
+    }
+  }
+
+  .slider__item {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider__age-profession {
+    display: block;
+    order: 3;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .slider__name {
+    order: 2;
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider__text {
+    display: block;
+    order: 1;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider__toggles {
+    display: none;
+  }
 }
