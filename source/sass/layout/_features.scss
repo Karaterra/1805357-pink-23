@@ -13,18 +13,27 @@
   }
 }
 
+.features__list-wrap {
+  background: $basic-gray url("../img/triangle.svg") no-repeat left top;
+  background-size: 100% 32px;
+}
+
 .features__list {
   min-height: 750px;
   padding: 53px 20px 0 20px;
   margin: 0 auto;
   list-style: none;
   display: block;
-  background: $basic-gray url("../img/smartphone-smile.png") no-repeat center 110%;
+  background: url("../img/smartphone-smile.png") no-repeat center 110%;
 }
 
 .features__item {
   text-align: center;
   display: block;
+
+  img {
+    display: none;
+  }
 
   &:last-child {
     margin-bottom: 321px;
@@ -47,4 +56,138 @@
 .features__triangle {
   padding-bottom: -15px;
   margin-bottom: -15px;
+}
+
+.features__item-appendix {
+  display: none;
+}
+
+@include tablet {
+  .features__title {
+    margin: 28px 36px 19px 36px;
+    font-size: 40px;
+    line-height: 54px;
+
+    p:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__list {
+    min-height: auto;
+    padding: 83px 20px 49px 330px;
+    background: url("../img/smartphone-smile-760.png") no-repeat 5% top;
+  }
+
+  .features__item {
+    text-align: left;
+
+    img {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__item-appendix {
+    min-height: 330px;
+    display: inline-block;
+    background: $basic-white url("../img/effect-24.svg") no-repeat 20px bottom;
+    background-size: 238px 276px;
+
+    h3 {
+      display: block;
+      margin: 102px 20px 20px 320px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+    }
+
+    p {
+      display: block;
+      margin: 20px 20px 20px 320px;
+    }
+
+    a {
+      display: block;
+      margin: 20px 20px 20px 320px;
+      color: $basic-red;
+    }
+  }
+}
+
+@include desktop {
+  .features {
+    width: 100%;
+  }
+
+  .features__title {
+    margin: 38px 36px 66px 36px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .features__list {
+    width: 1200px;
+    padding: 0 130px 49px 130px;
+    background: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .features__item {
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+
+    p {
+      padding: 10px 20px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    h3 {
+      margin: 49px 40px 35px 40px;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 700;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .features__item-appendix-wrap {
+    width: 100%;
+    display: block;
+    background-color: $basic-gray;
+    margin-top: -120px;
+  }
+
+  .features__item-appendix {
+    margin: 0 auto;
+    min-height: 429px;
+    width: 1200px;
+    display: block;
+    background: $basic-gray url("../img/effect-24.svg") no-repeat 131px 17px;
+    background-size: 298px 345px;
+
+    h3 {
+      margin: 115px 40px 37px 500px;
+      line-height: 30px;
+    }
+
+    p {
+      margin: 0 40px 47px 500px;
+    }
+
+    a {
+      margin: 0 40px 0 500px;
+    }
+  }
 }

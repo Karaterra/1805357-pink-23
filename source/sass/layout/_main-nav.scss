@@ -6,3 +6,20 @@
   position: absolute;
   top: 67px;
 }
+
+@include tablet {
+  .main-nav {
+    top: 90px;
+  }
+}
+
+@include desktop {
+  .main-nav {
+    min-height: 14px;
+    position: relative;
+    top: 0;
+    width: 40%;
+    align-self: center;
+    flex-grow: 1;
+  }
+}
