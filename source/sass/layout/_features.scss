@@ -119,6 +119,10 @@
 }
 
 @include desktop {
+  .features {
+    width: 100%;
+  }
+
   .features__title {
     margin: 38px 36px 66px 36px;
     font-size: 50px;
@@ -126,6 +130,7 @@
   }
 
   .features__list {
+    width: 1200px;
     padding: 0 130px 49px 130px;
     background: none;
     display: grid;
@@ -157,10 +162,18 @@
     }
   }
 
-  .features__item-appendix {
-    min-height: 429px;
+  .features__item-appendix-wrap {
     width: 100%;
-    display: inline-block;
+    display: block;
+    background-color: $basic-gray;
+    margin-top: -120px;
+  }
+
+  .features__item-appendix {
+    margin: 0 auto;
+    min-height: 429px;
+    width: 1200px;
+    display: block;
     background: $basic-gray url("../img/effect-24.svg") no-repeat 131px 17px;
     background-size: 298px 345px;
 

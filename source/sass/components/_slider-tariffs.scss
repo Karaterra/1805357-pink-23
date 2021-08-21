@@ -151,6 +151,10 @@
 }
 
 @include desktop {
+  .slider-tariffs {
+    width: 1200px;
+  }
+
   .slider-tariffs__table {
     min-width: 940px;
     width: 100%;

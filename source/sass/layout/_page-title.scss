@@ -135,6 +135,7 @@
 @include desktop {
   .page-title {
     min-height: 396px;
+    width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: url("../img/hand-smartphone-1200.png") no-repeat 90% 140px;

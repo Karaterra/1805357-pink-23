@@ -52,9 +52,14 @@
   }
 
   .page-header {
-    width: 100%;
+    margin: 0 auto;
     background: $basic-white url("../img/back-1220.jpg") no-repeat center top;
     background-size: cover;
+  }
+
+  .page-header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
   }
 
   .page-header__logo-svg-third {

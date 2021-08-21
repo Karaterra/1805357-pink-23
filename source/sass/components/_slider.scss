@@ -79,6 +79,8 @@
 
   .slider {
     position: relative;
+    width: 1200px;
+    margin: 0 auto;
   }
 
   .slider__next-pre-buttons {
@@ -88,13 +90,16 @@
     top: 50%;
     width: 100%;
 
-    a {
+    button {
       position: absolute;
       left: 10%;
       top: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
     }
 
-    a:last-child {
+    button:last-child {
       position: absolute;
       transform: rotate(180deg);
       left: 90%;
