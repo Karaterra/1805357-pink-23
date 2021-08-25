@@ -4,6 +4,16 @@
   padding-top: 36px;
   display: block;
   background: url("../img/hand-smartphone-320.png") no-repeat center 140px;
+
+  &--contest {
+    background: none;
+    min-height: 170px;
+  }
+
+  &--registration {
+    background: none;
+    min-height: 170px;
+  }
 }
 
 .page-title__wrapper {
@@ -26,12 +36,12 @@
   }
 
   &--contest {
-    margin-bottom: 84px;
     line-height: 33px;
+    padding-bottom: 84px;
   }
 
   &--registration {
-    margin-bottom: 51px;
+    padding-bottom: 51px;
     line-height: 33px;
   }
 }
@@ -94,6 +104,19 @@
     grid-template-columns: 1fr 1fr;
     background: url("../img/hand-smartphone-760.png") no-repeat 60% 94px;
     padding-top: 0;
+
+    &--contest {
+      display: block;
+      min-height: 330px;
+      background: none;
+    }
+
+    &--registration {
+      display: block;
+      min-height: 330px;
+      background: none;
+      padding-bottom: 74px;
+    }
   }
 
   .page-title__slogan {
@@ -106,6 +129,18 @@
 
     br:first-child {
       display: block;
+    }
+
+    &--contest {
+      font-size: 50px;
+      line-height: 68px;
+      padding-top: 81px;
+    }
+
+    &--registration {
+      font-size: 50px;
+      line-height: 68px;
+      padding-top: 81px;
     }
   }
 
@@ -140,6 +175,18 @@
     grid-template-columns: 1fr 1fr;
     background: url("../img/hand-smartphone-1200.png") no-repeat 90% 140px;
     padding-top: 0;
+
+    &--contest {
+      display: block;
+      min-height: 284px;
+      background: none;
+    }
+
+    &--registration {
+      display: block;
+      min-height: 284px;
+      background: none;
+    }
   }
 
   .page-title__slogan {
@@ -147,6 +194,15 @@
     padding-bottom: 51px;
     font-size: 50px;
     line-height: 68px;
+
+    &--contest {
+      padding-top: 54px;
+      padding-bottom: 0;
+    }
+
+    &--registration {
+      padding-top: 54px;
+    }
   }
 
   .page-title__button {

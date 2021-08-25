@@ -166,7 +166,6 @@
     width: 100%;
     display: block;
     background-color: $basic-gray;
-    margin-top: -120px;
   }
 
   .features__item-appendix {
@@ -176,9 +175,10 @@
     display: block;
     background: $basic-gray url("../img/effect-24.svg") no-repeat 131px 17px;
     background-size: 298px 345px;
+    padding-top: 100px;
 
     h3 {
-      margin: 115px 40px 37px 500px;
+      margin: 0 40px 37px 500px;
       line-height: 30px;
     }
 
