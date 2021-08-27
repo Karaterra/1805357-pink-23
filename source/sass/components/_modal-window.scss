@@ -24,3 +24,54 @@
 .modal-window__button {
   margin-bottom: 52px;
 }
+
+@include tablet {
+  .modal-window {
+    min-width: 460px;
+    background-image: linear-gradient($basic-white 60%, $basic-gray 40%);
+
+    &--error {
+      background-image: none;
+    }
+
+    &--confirm {
+      background-image: linear-gradient($basic-white 65%, $basic-gray 35%);
+
+      .modal-window__text {
+        padding: 0 50px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  .modal-window__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 100px;
+  }
+
+  .modal-window__text {
+    font-size: 18px;
+    padding: 0 50px;
+  }
+
+  .modal-window__button {
+    margin-bottom: 52px;
+  }
+}
+
+@include desktop {
+  .modal-window {
+    min-width: 780px;
+    min-height: 377px;
+    background-image: linear-gradient($basic-white 60%, $basic-gray 40%);
+  }
+
+  .modal-window__text {
+    margin-bottom: 100px;
+  }
+
+  .modal-window__button {
+    margin-top: 50px;
+  }
+}

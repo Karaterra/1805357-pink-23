@@ -16,15 +16,20 @@
 .features__list-wrap {
   background: $basic-gray url("../img/triangle.svg") no-repeat left top;
   background-size: 100% 32px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -50px;
+  }
 }
 
 .features__list {
-  min-height: 750px;
   padding: 53px 20px 0 20px;
   margin: 0 auto;
   list-style: none;
   display: block;
-  background: url("../img/smartphone-smile.png") no-repeat center 110%;
 }
 
 .features__item {
@@ -36,7 +41,7 @@
   }
 
   &:last-child {
-    margin-bottom: 321px;
+    margin-bottom: 20px;
   }
 }
 
@@ -70,6 +75,12 @@
 
     p:first-child {
       margin-bottom: 0;
+    }
+  }
+
+  .features__list-wrap {
+    img {
+      display: none;
     }
   }
 
@@ -166,7 +177,6 @@
     width: 100%;
     display: block;
     background-color: $basic-gray;
-    margin-top: -120px;
   }
 
   .features__item-appendix {
@@ -176,9 +186,10 @@
     display: block;
     background: $basic-gray url("../img/effect-24.svg") no-repeat 131px 17px;
     background-size: 298px 345px;
+    padding-top: 100px;
 
     h3 {
-      margin: 115px 40px 37px 500px;
+      margin: 0 40px 37px 500px;
       line-height: 30px;
     }
 

@@ -8,6 +8,7 @@
 .image-editor__title {
   margin: 54px 20px 54px 20px;
   padding: 0;
+  font-size: 14px;
   line-height: 30px;
   color: $basic-text;
   text-align: center;
@@ -15,7 +16,8 @@
 
 .image-editor__wrapper {
   min-width: 320px;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px;
   background-color: $basic-gray;
@@ -27,6 +29,7 @@
   object-fit: contain;
   background-color: $basic-gray;
   padding-bottom: 29px;
+  padding-top: 57px;
 
   a {
     min-width: 280px;
@@ -73,24 +76,30 @@
   width: 100%;
   padding-top: 39px;
   margin-bottom: 38px;
-  padding-right: 40px;
-  padding-left: 40px;
   padding-bottom: 32px;
   position: relative;
   border-bottom: 1px solid $basic-border;
+
+  &--contrast,
+  &--crop,
+  &--fill {
+    display: none;
+  }
 }
 
 .image-editor__bar {
   margin: 0 auto;
-  width: 100%;
+  padding: 0;
+  width: 280px;
   height: 2px;
   background-color: $basic-black;
+  position: relative;
 }
 
 .image-editor__toggle {
   position: absolute;
-  top: 34px;
-  left: 0;
+  top: -5px;
+  left: 100px;
   cursor: pointer;
   width: 12px;
   height: 12px;
@@ -120,5 +129,187 @@
     color: $basic-text;
     cursor: auto;
     opacity: 0.1;
+  }
+}
+
+@include tablet {
+  .image-editor__title {
+    margin: 73px 20px 78px 20px;
+    font-size: 18px;
+  }
+
+  .image-editor__form {
+    min-width: 660px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  .image-editor__wrapper {
+    grid-column: 1 / 2;
+    grid-row: span 4;
+    width: 340px;
+    height: auto;
+  }
+
+  .image-editor__icons-list {
+    text-align: center;
+    margin-top: 20px;
+    grid-column: 2 / 3;
+    width: auto;
+
+    li {
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid $basic-border;
+      margin-right: 25px;
+      margin-bottom: 17px;
+      padding-bottom: 14px;
+      padding-left: 10px;
+
+      &:last-child {
+        margin-right: 25px;
+        margin-bottom: 39px;
+      }
+
+      &:last-child svg {
+        width: 20px;
+      }
+    }
+  }
+
+  .image-editor__icon {
+    padding: 0;
+    opacity: 1;
+    align-self: center;
+    padding-right: 10px;
+
+    svg {
+      width: 24px;
+      height: auto;
+    }
+
+    & path {
+      fill: $basic-red;
+    }
+  }
+
+  .image-editor__range {
+    grid-column: 2 / 3;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-right: 10px;
+
+    &--basic {
+      display: none;
+    }
+
+    &--contrast,
+    &--crop,
+    &--fill {
+      display: block;
+    }
+  }
+
+  .image-editor__bar {
+    width: 228px;
+  }
+
+  .image-editor__button {
+    grid-column: 2 / 3;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@include desktop {
+  .image-editor__title {
+    margin: 67px 20px 75px 20px;
+  }
+
+  .image-editor__form {
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  .image-editor__wrapper {
+    grid-column: 1 / 2;
+    grid-row: span 4;
+    width: 340px;
+    height: auto;
+    margin-left: 80px;
+  }
+
+  .image-editor__icons-list {
+    text-align: center;
+    margin-top: 20px;
+    grid-column: 2 / 3;
+    width: auto;
+
+    li {
+      width: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid $basic-border;
+      margin-right: 45px;
+      margin-bottom: 17px;
+      padding-bottom: 14px;
+      padding-left: 10px;
+
+      &:last-child {
+        margin-right: 45px;
+        margin-bottom: 39px;
+      }
+
+      &:last-child svg {
+        width: 38px;
+      }
+    }
+  }
+
+  .image-editor__icon {
+    padding: 0;
+    opacity: 1;
+    align-self: center;
+    padding-right: 10px;
+
+    svg {
+      width: 44px;
+      height: auto;
+    }
+
+    & path {
+      fill: $basic-red;
+    }
+  }
+
+  .image-editor__range {
+    grid-column: 2 / 3;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-right: 10px;
+
+    &--basic {
+      display: none;
+    }
+  }
+
+  .image-editor__bar {
+    width: 228px;
+  }
+
+  .image-editor__button {
+    grid-column: 2 / 3;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-right: 135px;
   }
 }

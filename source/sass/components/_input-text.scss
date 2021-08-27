@@ -1,11 +1,11 @@
 .input-text {
   display: block;
+  margin-bottom: 21px;
 
   span {
     line-height: 30px;
     color: $basic-red;
     text-transform: uppercase;
-    margin-left: 21px;
   }
 
   input {
@@ -14,11 +14,54 @@
     line-height: 30px;
     color: $basic-text;
     padding: 15px 0 16px 20px;
-    border: 2px solid $basic-gray;
+    border: 2px solid $basic-border;
     border-radius: 1px;
     min-width: 280px;
     width: 100%;
     display: block;
-    margin-bottom: 21px;
+  }
+}
+
+@include tablet {
+  .input-text {
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 80%;
+      flex-grow: 1;
+
+      &[type="tel"] {
+        background: url("../img/phone-icon.svg") no-repeat right top;
+        background-size: contain;
+      }
+
+      &[type="email"] {
+        background: url("../img/mail-icon.svg") no-repeat right top;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .input-text {
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 80%;
+      flex-grow: 1;
+
+      &[type="tel"] {
+        background: url("../img/phone-icon.svg") no-repeat right top;
+        background-size: contain;
+      }
+
+      &[type="email"] {
+        background: url("../img/mail-icon.svg") no-repeat right top;
+        background-size: contain;
+      }
+    }
   }
 }
