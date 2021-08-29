@@ -13,7 +13,7 @@
 
   li {
     display: inline;
-    margin-right: 8px;
+    margin-right: 4px;
 
     &:last-child {
       margin-right: 0;
@@ -27,4 +27,18 @@
 
 .social__link {
   background: none;
+
+  circle {
+    opacity: 0.1;
+  }
+
+  &:hover {
+    circle {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }

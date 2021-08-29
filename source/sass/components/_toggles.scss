@@ -9,14 +9,22 @@
   overflow: hidden;
   background: none;
   opacity: 0.3;
-  margin-right: 15px;
   cursor: pointer;
 
-  &:last-child {
-    margin-right: 0;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 
   &--current {
     opacity: 1;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
   }
 }

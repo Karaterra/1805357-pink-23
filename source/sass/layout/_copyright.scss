@@ -8,7 +8,24 @@
 }
 
 .copyright__link {
-  margin-left: 15px;
+  margin-left: 10px;
   display: inline-block;
   vertical-align: -50%;
+
+  &:hover {
+    path {
+      fill: $basic-text;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@include desktop {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
