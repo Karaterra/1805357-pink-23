@@ -19,6 +19,7 @@
   background: $basic-gray url("../img/triangle.svg") no-repeat left top;
   background-size: 100% 32px;
   overflow: hidden;
+  padding-bottom: 8px;
 
   img {
     display: block;
@@ -51,13 +52,14 @@
   font-weight: 700;
   font-size: 18px;
   color: $basic-black;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   margin-top: 0;
 }
 
 .features__text {
   color: $basic-black;
   margin-bottom: 31px;
+  margin-top: 0;
 }
 
 .features__triangle {
@@ -81,6 +83,9 @@
   }
 
   .features__list-wrap {
+    background-size: 100% 52px;
+    padding-bottom: 0;
+
     img {
       display: none;
     }
@@ -88,8 +93,8 @@
 
   .features__list {
     min-height: auto;
-    padding: 76px 20px 13px 330px;
-    background: url("../img/smartphone-smile-760.png") no-repeat 5% -14%;
+    padding: 76px 20px 9px 330px;
+    background: url("../img/smartphone-smile-760.png") no-repeat 5% -10%;
   }
 
   .features__item {
@@ -102,6 +107,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .features__text {
+    color: $basic-black;
+    margin-bottom: 34px;
+    margin-top: 0;
   }
 
   .features__item-appendix {
@@ -120,12 +131,12 @@
 
     p {
       display: block;
-      margin: 20px 30px 0 330px;
+      margin: 20px 34px 0 330px;
     }
 
     a {
       display: block;
-      margin: 0 20px 20px 330px;
+      margin: 10px 20px 20px 330px;
       color: $basic-red;
 
       &:hover {
@@ -152,7 +163,7 @@
 
   .features__list {
     width: 1200px;
-    padding: 0 120px 12px 120px;
+    padding: 0 120px 1px 120px;
     background: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -160,6 +171,20 @@
 
   .features__list-wrap {
     background-size: 100% 94px;
+    padding-bottom: 4px;
+  }
+
+  .features__text {
+    padding: 12px 40px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features__name {
+    margin: 98px 40px 10px 40px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
   }
 
   .features__item {
@@ -169,17 +194,8 @@
       display: inline-block;
     }
 
-    p {
-      padding: 5px 40px;
-      font-size: 18px;
-      line-height: 30px;
-    }
-
-    h3 {
-      margin: 98px 40px 10px 40px;
-      font-size: 30px;
-      line-height: 30px;
-      font-weight: 700;
+    br {
+      display: none;
     }
 
     &:last-child {
@@ -200,19 +216,16 @@
     display: block;
     background: $basic-gray url("../img/effect-24.svg") no-repeat 131px 17px;
     background-size: 298px 345px;
-    padding-top: 115px;
+    padding-top: 112px;
+    margin-bottom: 12px;
 
     h3 {
       margin: 0 40px 26px 500px;
       line-height: 30px;
-
-      br {
-        display: none;
-      }
     }
 
     p {
-      margin: 0 50px 32px 500px;
+      margin: 0 160px 32px 500px;
       font-size: 18px;
       line-height: 30px;
     }
@@ -220,6 +233,10 @@
     a {
       margin: 0 40px 0 500px;
       font-size: 18px;
+    }
+
+    br {
+      display: none;
     }
   }
 }

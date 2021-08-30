@@ -85,7 +85,7 @@
       top: 8px;
       width: 28px;
       height: 3px;
-      background-color: #ffffff;
+      background-color: $basic-white;
     }
 
     &::before {
@@ -141,7 +141,7 @@
   .page-header__wrapper {
     margin: 0 auto;
     width: 1200px;
-    background: transparent;
+    background-color: transparent;
   }
 
   .page-header__logo-svg-third {

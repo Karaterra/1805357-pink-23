@@ -1,7 +1,7 @@
 .tariffs {
   background-color: $basic-gray;
   padding-top: 94px;
-  padding-bottom: 70px;
+  padding-bottom: 38px;
   min-width: 320px;
   position: relative;
 }
@@ -13,18 +13,25 @@
 .tariffs__triangle {
   position: absolute;
   top: 0;
+  height: 20px;
 }
 
 @include tablet {
   .tariffs {
     padding-top: 90px;
+    padding-bottom: 66px;
+  }
+
+  .tariffs__triangle {
+    height: 40px;
   }
 }
 
 @include desktop {
   .tariffs {
-    padding-top: 156px;
-    padding-bottom: 100px;
+    margin-top: 3px;
+    padding-top: 147px;
+    padding-bottom: 95px;
   }
 
   .tariffs__triangle {
