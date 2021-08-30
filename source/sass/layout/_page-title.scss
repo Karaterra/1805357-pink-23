@@ -1,9 +1,9 @@
 .page-title {
   margin: 0 auto;
   min-height: 396px;
-  padding-top: 36px;
+  padding-top: 22px;
   display: block;
-  background: url("../img/hand-smartphone-320.png") no-repeat center 140px;
+  background: url("../img/hand-smartphone-320.png") no-repeat center 110px;
 
   &--contest {
     background: none;
@@ -28,7 +28,7 @@
   color: $basic-white;
   display: block;
   margin: 0 20px;
-  padding-bottom: 330px;
+  padding-bottom: 314px;
   text-align: center;
 
   br:first-child {
@@ -52,21 +52,31 @@
   background-color: $basic-deepwater;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
 }
 
 .page-title__button {
-  margin: 28px 20px 32px 20px;
-  padding: 17px 35px;
+  margin: 28px 20px 17px 20px;
+  padding: 15px 35px;
   border: solid 3px $basic-white;
   border-radius: 29px;
   background: transparent;
   text-align: center;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: $basic-white;
   cursor: pointer;
+
+  &:hover {
+    background-color: $basic-white;
+    color: $basic-red;
+  }
+
+  &:active {
+    color: $basic-light-red;
+  }
 }
 
 .page-title__platform-list {
@@ -79,7 +89,7 @@
   }
 
   li {
-    margin-right: 35px;
+    margin-right: 32px;
     display: inline;
 
     &:last-child {
@@ -92,7 +102,7 @@
   font-weight: 300;
   color: $basic-white;
   display: block;
-  margin: 28px 20px 0 20px;
+  margin: 17px 20px 0 20px;
   text-align: center;
   min-width: 280px;
 }
@@ -102,7 +112,7 @@
     min-height: 396px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: url("../img/hand-smartphone-760.png") no-repeat 60% 94px;
+    background: url("../img/hand-smartphone-760.png") no-repeat 60% 74px;
     padding-top: 0;
 
     &--contest {
@@ -122,8 +132,9 @@
   .page-title__slogan {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding-top: 102px;
-    padding-bottom: 39px;
+    padding-top: 92px;
+    padding-left: 10px;
+    padding-bottom: 0;
     font-size: 40px;
     line-height: 48px;
 
@@ -157,11 +168,31 @@
   }
 
   .page-title__button {
-    padding: 17px 48px;
+    min-width: 300px;
+    padding: 17px 40px;
+    margin-bottom: 23px;
+    font-family: inherit;
+    margin-top: 31px;
+  }
+
+  .page-title__platform-list {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin-right: 36px;
+      display: block;
+    }
   }
 
   .page-title__annotation {
     padding-bottom: 119px;
+    padding-left: 10px;
     font-size: 18px;
     margin: 0;
   }
@@ -173,7 +204,7 @@
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: url("../img/hand-smartphone-1200.png") no-repeat 90% 140px;
+    background: url("../img/hand-smartphone-1200.png") no-repeat 97% 99px;
     padding-top: 0;
 
     &--contest {
@@ -190,10 +221,13 @@
   }
 
   .page-title__slogan {
-    padding-top: 114px;
-    padding-bottom: 51px;
+    padding-top: 100px;
+    padding-bottom: 35px;
+    padding-left: 0;
     font-size: 50px;
     line-height: 68px;
+    margin-left: -20px;
+
 
     &--contest {
       padding-top: 54px;
@@ -210,15 +244,23 @@
     line-height: 18px;
     margin-bottom: 67px;
     margin-top: 0;
+    margin-left: -20px;
+    padding: 15px 14px;
+  }
+
+  .page-title__platform-list {
+    margin-top: 2px;
+    margin-bottom: 46px;
+    margin-left: -40px;
   }
 
   .page-title__annotation {
-    padding-top: 58px;
+    padding-top: 0;
     padding-bottom: 55px;
-    margin: 0;
+    margin-left: -50px;
   }
 
   .page-title__downloads {
-    padding-bottom: 0;
+    padding-bottom: 70px;
   }
 }

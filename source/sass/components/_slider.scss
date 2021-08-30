@@ -1,6 +1,7 @@
 .slider {
   min-width: 320px;
-  margin-top: 50px;
+  margin-top: 41px;
+  margin-bottom: 28px;
 }
 
 .slider__list {
@@ -12,7 +13,7 @@
 }
 
 .slider__name {
-  margin-bottom: 30px;
+  margin-bottom: 13px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -25,7 +26,7 @@
 }
 
 .slider__text {
-  margin: 0 20px 34px 20px;
+  margin: 0 20px 26px 20px;
   line-height: 30px;
   color: $basic-black;
   text-align: center;
@@ -36,8 +37,13 @@
 }
 
 @include tablet {
+  .slider {
+    margin-bottom: 6px;
+  }
+
   .slider__item {
-    margin-top: 109px;
+    margin-top: 94px;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -46,13 +52,16 @@
     display: block;
     order: 3;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 30px;
   }
 
   .slider__name {
     display: block;
     order: 2;
-    margin-bottom: 7px;
+    margin-bottom: 0;
+    margin-top: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -62,6 +71,7 @@
     order: 1;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 35px;
   }
 
   .slider__next-pre-buttons {
@@ -71,8 +81,8 @@
 
 @include desktop {
   .slider__list {
-    background: url("../img/quotes.svg") no-repeat center 72px;
-    padding-top: 193px;
+    background: url("../img/quotes.svg") no-repeat center 60px;
+    padding-top: 172px;
     padding-left: 256px;
     padding-right: 256px;
   }
@@ -87,23 +97,32 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 48%;
     width: 100%;
 
     button {
       position: absolute;
-      left: 10%;
-      top: 0;
+      left: 126px;
+      top: 12px;
       border: none;
       background: none;
       cursor: pointer;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
 
     button:last-child {
       position: absolute;
       transform: rotate(180deg);
-      left: 90%;
-      top: -8px;
+      left: 1044px;
+      top: 9px;
     }
   }
 
@@ -111,19 +130,21 @@
     margin-top: 0;
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .slider__age-profession {
     display: block;
     order: 3;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 18px;
   }
 
   .slider__name {
     order: 2;
-    margin-bottom: 7px;
-    font-size: 20px;
+    margin-bottom: 3px;
+    font-size: 24px;
     line-height: 30px;
   }
 
@@ -132,6 +153,7 @@
     order: 1;
     font-size: 18px;
     line-height: 30px;
+    margin: 0 0 35px 0;
   }
 
   .slider__toggles {

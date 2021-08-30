@@ -5,6 +5,18 @@
   margin: 0 auto;
   position: absolute;
   top: 67px;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 @include tablet {
@@ -15,6 +27,7 @@
 
 @include desktop {
   .main-nav {
+    display: block;
     min-height: 14px;
     position: relative;
     top: 0;
