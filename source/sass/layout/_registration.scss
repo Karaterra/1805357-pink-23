@@ -5,12 +5,18 @@
 }
 
 .registration__title {
-  margin: 54px 20px 55px 20px;
+  margin: 43px 20px 35px 20px;
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
   color: $basic-text;
   text-align: center;
   display: block;
+
+  span,
+  br {
+    display: none;
+  }
 }
 
 .registration__form {
@@ -27,21 +33,41 @@
   min-width: 280px;
 
   &:first-child {
-    padding: 0 22px;
+    padding: 0 20px;
+    margin-bottom: 25px;
   }
 
-  &--bg-gray-first,
+  &--bg-gray-first {
+    background-color: $basic-gray;
+    padding-top: 117px;
+    padding-left: 18px;
+    padding-bottom: 1px;
+    margin-bottom: -6px;
+  }
+
   &--bg-gray-second {
     background-color: $basic-gray;
-    padding-top: 145px;
+    padding-top: 114px;
+    padding-left: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .registration__choice {
+      margin-bottom: 45px;
+      padding-left: 11px;
+    }
   }
 
   &--second {
-    padding: 142px 22px 44px 22px;
+    padding: 32px 22px 26px 20px;
+
+    .registration__legend-text {
+      display: none;
+    }
   }
 
   &--notice {
-    padding: 44px 22px 0 22px;
+    padding: 22px 20px 0 20px;
   }
 }
 
@@ -49,14 +75,28 @@
   margin: 0 auto;
 
   &--name {
+    margin-bottom: 20px;
+
     span {
-      margin-left: 20px;
+      margin-left: 23px;
+      margin-bottom: 6px;
+    }
+
+    input {
+      margin-bottom: -4px;
     }
   }
 
   &--tel-email {
+    margin-bottom: 21px;
+
     span {
-      margin-left: 20px;
+      margin-left: 24px;
+      margin-bottom: 6px;
+    }
+
+    input {
+      margin-bottom: -5px;
     }
   }
 }
@@ -64,7 +104,8 @@
 .registration__legend-text {
   margin: 0 auto;
   position: absolute;
-  top: 42px;
+  width: 80%;
+  top: 38px;
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
@@ -72,7 +113,7 @@
 
 .registration__notice-text {
   min-width: 280px;
-  min-height: 197px;
+  min-height: 202px;
   font-size: 18px;
   line-height: 30px;
   color: $basic-text;
@@ -81,8 +122,8 @@
 
 .registration__notice-text-wraper {
   min-width: 280px;
-  margin-top: 100px;
-  margin-bottom: 52px;
+  margin-top: 50px;
+  margin-bottom: 26px;
   display: block;
 }
 
@@ -95,67 +136,107 @@
 
 .registration__required-fields-text {
   line-height: 30px;
+  font-size: 14px;
   text-transform: uppercase;
   color: $basic-text;
   text-align: center;
-  margin: 36px 0 20px 0;
+  margin: 33px 0 22px 0;
   display: block;
 
-  span {
+  span:first-child {
     color: $basic-red;
+  }
+
+  span:last-child {
+    display: none;
   }
 }
 
 @include tablet {
+  .registration {
+    margin-bottom: 40px;
+  }
+
   .registration__title {
-    margin: 100px 84px 82px 84px;
+    margin: 91px 84px 52px 84px;
     font-size: 18px;
+
+    span,
+    br {
+      display: inline;
+    }
   }
 
   .registration__form {
     min-width: 660px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .registration__fieldset {
-    min-width: 616px;
+    min-width: 618px;
     margin-bottom: 51px;
     border: 2px solid $basic-border;
 
     &:first-child {
       order: 1;
+      flex-grow: 1;
       border: none;
+      padding-top: 20px;
+      margin-bottom: 14px;
     }
 
     &--notice {
       order: 5;
-      margin: 42px 22px 51px 22px;
-      padding: 47px 60px 53px 60px;
+      flex-grow: 1;
+      margin: 42px 20px 51px 20px;
+      padding: 45px 58px 50px 58px;
     }
 
     &--bg-gray-first {
       background-color: transparent;
-      padding-top: 50px;
-      padding-left: 60px;
-      order: 3;
-      margin: 0 22px;
-      margin-bottom: 51px;
+      padding-top: 56px;
+      padding-left: 56px;
+      order: 4;
+      flex-grow: 1;
+      margin: 0 20px;
+      margin-bottom: 24px;
+
+      .choice span {
+        margin: 2px 0 0 61px;
+      }
     }
 
     &--bg-gray-second {
       order: 2;
+      flex-grow: 1;
       background-color: transparent;
-      padding-top: 50px;
-      padding-left: 60px;
-      margin: 0 22px;
+      padding-top: 58px;
+      padding-left: 56px;
+      margin: 0 20px;
       margin-bottom: 51px;
+
+      .registration__choice {
+        margin-bottom: 44px;
+        padding-left: 11px;
+      }
+
+      .registration__choice:last-child {
+        margin-bottom: 59px;
+      }
     }
 
     &--second {
-      order: 4;
-      margin: 42px 22px 51px 22px;
-      padding-top: 40px;
+      order: 3;
+      flex-grow: 1;
+      margin: 15px 20px 66px 20px;
+      padding: 44px 10px 0 10px;
+
+
+      .registration__legend-text {
+        display: block;
+      }
     }
 
     &:last-child {
@@ -169,7 +250,8 @@
     text-align: center;
     top: -10px;
     background-color: $basic-white;
-    padding: 0 20px;
+    padding: 0 32px;
+    width: auto;
   }
 
   .registration__input-text {
@@ -177,16 +259,22 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+      margin-bottom: 19px;
+
+      &:last-child {
+        margin-bottom: 17px;
+      }
 
       span {
         align-self: flex-start;
         order: 2;
-        margin-top: 22px;
-        margin-left: 80px;
+        margin-top: 15px;
+        margin-left: 67px;
+        margin-bottom: 10px;
       }
 
       input {
-        margin-top: 20px;
+        margin-top: 0;
         order: 1;
       }
     }
@@ -194,23 +282,24 @@
     &--name {
       display: flex;
       width: 100%;
+      margin-bottom: 56px;
 
       span {
         align-self: center;
-        margin-top: 22px;
-        margin-left: 12px;
-        margin-right: 20px;
+        margin-top: 12px;
+        margin-left: 0;
+        margin-right: 19px;
       }
 
       input {
-        margin-top: 20px;
+        margin-top: 0;
       }
     }
   }
 
   .registration__notice-text {
     min-width: 280px;
-    min-height: 197px;
+    min-height: 193px;
     font-size: 18px;
     line-height: 30px;
     color: $basic-text;
@@ -224,33 +313,42 @@
   .registration__button {
     display: block;
     order: 6;
+    flex-grow: 1;
+    width: 160px;
+    min-height: 59px;
+    margin: 16px 0 20px 20px;
   }
 
   .registration__required-fields-text {
     line-height: 30px;
     text-transform: uppercase;
     color: $basic-text;
-    text-align: center;
-    margin: 36px 0 20px 0;
+    text-align: right;
+    margin: 33px 20px 20px 0;
     display: block;
-    order: 7;
-
-    span {
-      color: $basic-red;
-    }
+    order: 6;
+    flex-grow: 1;
   }
 }
 
 @include desktop {
+  .registration {
+    margin-bottom: 4px;
+  }
+
   .registration__title {
-    margin: 100px 222px 70px 222px;
+    margin: 91px 222px 70px 222px;
     font-size: 18px;
+
+    br {
+      display: none;
+    }
   }
 
   .registration__form {
-    width: 936px;
+    width: 940px;
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content min-content min-content min-content;
@@ -261,6 +359,7 @@
     min-width: 200px;
     margin-bottom: 20px;
     border: 2px solid $basic-border;
+    padding: 0 16px;
 
     &:first-child {
       grid-row: 1 / 2;
@@ -268,43 +367,74 @@
       border: none;
       margin-right: 0;
       margin-left: 0;
+      margin-bottom: 0;
+      padding: 0;
     }
 
     &--notice {
       grid-row: 4 / 5;
       grid-column: 1 / 3;
-      margin-bottom: 50px;
-      padding: 47px 60px 53px 60px;
+      margin: 0 0 10px 0;
+      padding: 42px 58px 43px 58px;
     }
 
     &--bg-gray-first {
       min-width: 660px;
+      height: 232px;
       background-color: transparent;
-      padding-top: 50px;
-      padding-left: 60px;
+      padding-top: 36px;
+      padding-left: 55px;
+      padding-right: 0;
+      padding-bottom: 28px;
       grid-row: 3 / 4;
       grid-column: 1 / 3;
       margin: 0;
-      margin-bottom: 51px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .registration__choice {
+        margin: 20px 0 26px 0;
+        padding-left: 0;
+        flex-grow: 1;
+      }
+
+      .registration__choice:last-child span,
+      .registration__choice:nth-child(6) span {
+        margin-left: 54px;
+      }
+
+      .registration__choice:nth-child(5) span,
+      .registration__choice:nth-child(4) span {
+        margin-left: 56px;
+      }
     }
 
     &--bg-gray-second {
       grid-row: 1 / 2;
       grid-column: 2 / 3;
       background-color: transparent;
-      padding-top: 60px;
-      padding-bottom: 20px;
-      padding-left: 60px;
-      margin: 40px 0 50px 0;
+      padding-top: 56px;
+      padding-bottom: 30px;
+      padding-left: 69px;
+      margin: 9px 0 10px 16px;
+
+      .registration__choice {
+        margin-bottom: 47px;
+        padding-left: 11px;
+      }
+
+      .registration__choice:last-child {
+        margin-bottom: 29px;
+      }
     }
 
     &--second {
       grid-row: 2 / 3;
       grid-column: 1 / 3;
-      margin: 0 0 51px 0;
+      margin: 13px 0 25px 0;
+      padding: 10px 22px 3px 22px;
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -325,32 +455,45 @@
 
   .registration__input-text {
     &--tel-email {
+      margin-top: 32px;
+      margin-bottom: 0;
+
       span {
         align-self: flex-start;
-        margin-top: 22px;
-        margin-left: 70px;
+        margin-top: 15px;
+        margin-left: 55px;
       }
 
       input {
-        margin-top: 39px;
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 
     &--name {
+      margin-bottom: 53px;
+      margin-top: 15px;
+
       span {
-        margin-top: 39px;
-        margin-left: 0;
+        margin: 3px 18px 0 0;
       }
 
       input {
-        margin-top: 39px;
+        margin: 0 15px 0 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
 
   .registration__notice-text {
     min-width: 280px;
-    min-height: 197px;
+    min-height: 128px;
     font-size: 18px;
     line-height: 30px;
     color: $basic-text;
@@ -365,22 +508,24 @@
     display: block;
     grid-row: 5 / 6;
     grid-column: 1 / 2;
-    margin-left: 22px;
+    margin-left: 0;
+    width: 300px;
   }
 
   .registration__required-fields-text {
-    display: block;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $basic-text;
+
     text-align: right;
-    padding-right: 22px;
-    margin: 36px 0 20px 0;
+    padding-right: 0;
+    margin: 32px 0 20px 0;
     grid-row: 5 / 6;
     grid-column: 2 / 3;
 
-    span {
+    span:first-child {
       color: $basic-red;
+    }
+
+    span:last-child {
+      display: inline;
     }
   }
 }

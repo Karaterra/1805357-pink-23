@@ -1,5 +1,5 @@
 .choice {
-  margin: 0 0 47px 0;
+  margin: 0 0 52px 0;
   position: relative;
   cursor: pointer;
   user-select: none;
@@ -8,15 +8,15 @@
   span {
     font-size: 18px;
     line-height: 30px;
-    margin: 0 2px 0 52px;
+    margin: 0 2px 0 61px;
 
     &::before {
       content: "";
       position: absolute;
       left: 2px;
-      top: -3px;
-      width: 37px;
-      height: 37px;
+      top: -4px;
+      width: 39px;
+      height: 39px;
       border: 2px $basic-border solid;
       border-radius: 1px;
       background-color: $basic-white;
@@ -27,9 +27,9 @@
       content: "";
       position: absolute;
       left: 2px;
-      top: -3px;
-      width: 37px;
-      height: 37px;
+      top: -4px;
+      width: 39px;
+      height: 39px;
       border: 2px $basic-border solid;
       border-radius: 1px;
       background-color: $basic-white;
@@ -45,18 +45,47 @@
   }
 
   [type="radio"] + span::before {
+    display: block;
     border-radius: 50%;
+    width: 41px;
+    height: 41px;
   }
 
   [type="radio"] + span::after {
     display: none;
     position: absolute;
-    left: 13px;
-    top: 8px;
+    left: 15px;
+    top: 9px;
     width: 15px;
     height: 15px;
     border: none;
     background-color: $basic-red;
     border-radius: 50%;
+  }
+}
+
+@include tablet {
+  .choice {
+    span {
+      margin: 2px 0 0 52px;
+    }
+  }
+}
+
+@include desktop {
+  .registration__fieldset--bg-gray-first {
+    .choice:last-child,
+    .choice:nth-child(6) {
+      span::before {
+        margin: 0 0 0 -7px;
+      }
+    }
+
+    .choice:nth-child(5),
+    .choice:nth-child(4) {
+      span::before {
+        margin: 0 0 0 -4px;
+      }
+    }
   }
 }
