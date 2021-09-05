@@ -21,4 +21,3 @@ navToggle.addEventListener('click', function() {
     navWrapper.classList.remove('page-header__wrapper--nojs');
   }
 });
-
