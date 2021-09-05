@@ -1,5 +1,6 @@
 .modal-window {
   min-width: 320px;
+  height: 289px;
   background-color: $basic-white;
   box-shadow: 0 7px 15px $basic-shadow;
   border-radius: 1px;
@@ -8,37 +9,59 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  &--error {
+    background-image: none;
+  }
+
+  &--confirm {
+    background-image: linear-gradient($basic-white 57%, $basic-gray 43%);
+    height: 380px;
+
+    .modal-window__text {
+      margin: 10px auto;
+      width: 261px;
+      margin-bottom: 85px;
+    }
+  }
 }
 
 .modal-window__title {
   font-weight: 700;
   font-size: 18px;
-  margin-top: 44px;
-  margin-bottom: 37px;
+  font-family: inherit;
+  margin-top: 38px;
+  margin-bottom: 25px;
 }
 
 .modal-window__text {
-  margin: 0 22px 50px 22px;
+  margin: 0 22px 40px 22px;
+  font-family: inherit;
 }
 
 .modal-window__button {
+  font-family: inherit;
   margin-bottom: 52px;
 }
 
 @include tablet {
   .modal-window {
     min-width: 460px;
+    height: 363px;
     background-image: linear-gradient($basic-white 60%, $basic-gray 40%);
+    border-radius: 5px;
 
     &--error {
       background-image: none;
     }
 
     &--confirm {
-      background-image: linear-gradient($basic-white 65%, $basic-gray 35%);
+      background-image: linear-gradient($basic-white 63%, $basic-gray 37%);
+      height: 432px;
 
       .modal-window__text {
-        padding: 0 50px;
+        margin: 10px auto;
+        width: 310px;
         margin-bottom: 80px;
       }
     }
@@ -47,31 +70,53 @@
   .modal-window__title {
     font-size: 30px;
     line-height: 40px;
-    padding: 0 100px;
+    margin: 40px auto 23px auto;
+    width: 250px;
   }
 
   .modal-window__text {
     font-size: 18px;
-    padding: 0 50px;
+    margin: 0 auto 33px auto;
+    width: 300px;
   }
 
   .modal-window__button {
     margin-bottom: 52px;
+    width: 300px;
   }
 }
 
 @include desktop {
   .modal-window {
     min-width: 780px;
-    min-height: 377px;
-    background-image: linear-gradient($basic-white 60%, $basic-gray 40%);
+    height: 377px;
+    background-image: linear-gradient($basic-white 57%, $basic-gray 43%);
+
+    &--confirm {
+      .modal-window__text {
+        margin: 20px auto 80px auto;
+        width: 500px;
+      }
+
+      .modal-window__button {
+        width: 460px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .modal-window__title {
+    margin: 40px auto 23px auto;
+    width: 400px;
   }
 
   .modal-window__text {
-    margin-bottom: 100px;
+    margin: 0 auto 63px auto;
+    width: 400px;
   }
 
   .modal-window__button {
+    width: 300px;
     margin-top: 50px;
   }
 }

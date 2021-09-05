@@ -13,4 +13,17 @@
   border-radius: 2px;
   color: $basic-white;
   cursor: pointer;
+
+  &:hover {
+    background-color: $basic-button-hover;
+  }
+
+  &:active {
+    color: $basic-button-light;
+  }
+
+  &:disabled {
+    background-color: $basic-border;
+    border: 2px solid $basic-border;
+  }
 }

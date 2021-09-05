@@ -1,5 +1,5 @@
 .choice {
-  margin: 0 0 52px 0;
+  margin-bottom: 52px;
   position: relative;
   cursor: pointer;
   user-select: none;
@@ -72,20 +72,3 @@
   }
 }
 
-@include desktop {
-  .registration__fieldset--bg-gray-first {
-    .choice:last-child,
-    .choice:nth-child(6) {
-      span::before {
-        margin: 0 0 0 -7px;
-      }
-    }
-
-    .choice:nth-child(5),
-    .choice:nth-child(4) {
-      span::before {
-        margin: 0 0 0 -4px;
-      }
-    }
-  }
-}
