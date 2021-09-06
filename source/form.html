@@ -79,117 +79,106 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br>
           <span>Пожалуйста, заполните форму ниже:</span>
         </h2>
-        <form method="post" action="https://echo.htmlacademy.ru" class="registration__form">
-          <fieldset class="registration__fieldset">
-            <legend class="visually-hidden">Фамилия, имя, отчество:</legend>
-            <label class="input-text registration__input-text registration__input-text--name">
-              <span>
-                Фамилия:
-              </span>
-              <input type="text" name="first-name" placeholder="Укажите фамилию *" required>
+        <form method="post" action="https://echo.htmlacademy.ru" class="order-form">
+          <div class="order-form__person">
+            <h3 class="visually-hidden">Персональные данные</h3>
+
+            <label class="order-form__field field-text">
+              <span>Фамилия:</span>
+              <input type="text" name="family" placeholder="Укажите фамилию *" required>
             </label>
-            <label class="input-text registration__input-text registration__input-text--name">
-              <span>
-                Имя:
-              </span>
-              <input type="text" name="second-name" placeholder="Введите ваше имя *" required>
+
+            <label class="order-form__field field-text">
+              <span>Имя:</span>
+              <input type="text" name="name" placeholder="Введите ваше имя *" required>
             </label>
-            <label class="input-text registration__input-text registration__input-text--name">
-              <span>
-                Отчество:
-              </span>
-              <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
+
+            <label class="order-form__field field-text">
+              <span>Отчество:</span>
+              <input type="text" name="secondname" placeholder="Ну и отчество тоже">
             </label>
-          </fieldset>
-          <fieldset class="registration__fieldset registration__fieldset--bg-gray-first">
-            <legend class="legend-text registration__legend-text">
-              Ваши безбашенные достижения в путешествии
-            </legend>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="checkbox" name="my-action" value="Сделал селфи с акулой" checked>
-              <span>
-                Сделал селфи с акулой
-              </span>
+          </div>
+
+          <div class="order-form__check">
+            <h3 class="order-form__title">Ваши безбашенные достижения в путешествии</h3>
+
+            <label class="order-form__choice choice">
+              <input type="checkbox" name="check" value="1" checked>
+              <span>Сделал селфи с акулой</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="checkbox" name="my-action" value="Обгорел на пляже" checked>
-              <span>
-                Обгорел на пляже
-              </span>
+
+            <label class="order-form__choice choice">
+              <input type="checkbox" name="check" value="2" checked>
+              <span>Обгорел на пляже</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="checkbox" name="my-action" value="Видел Чака Норриса">
-              <span>
-                Видел Чака Норриса
-              </span>
+
+            <label class="order-form__choice choice">
+              <input type="checkbox" name="check" value="3">
+              <span>Видел Чака Норриса</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="checkbox" name="my-action" value="Накупил сувениров">
-              <span>
-                Накупил сувениров
-              </span>
+
+            <label class="order-form__choice choice">
+              <input type="checkbox" name="check" value="4">
+              <span>Накупил сувениров</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="checkbox" name="my-action" value="Удержал башню">
-              <span>
-                Удержал башню
-              </span>
+
+            <label class="order-form__choice choice">
+              <input type="checkbox" name="check" value="5" checked>
+              <span>Удержал башню</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="checkbox" name="my-action" value="Разгромил отель">
-              <span>
-                Разгромил отель
-              </span>
+
+            <label class="order-form__choice choice">
+              <input type="checkbox" name="check" value="6">
+              <span>Разгромил отель</span>
             </label>
-          </fieldset>
-          <fieldset class="registration__fieldset registration__fieldset--second">
-            <legend class="legend-text registration__legend-text">Контактная информация</legend>
-            <label class="input-text registration__input-text registration__input-text--tel-email">
-              <span>
-                Номер телефона:
-              </span>
+          </div>
+
+          <div class="order-form__contacts">
+            <h3 class="order-form__title">контактная информация</h3>
+
+            <label class="order-form__field field-text field-text--phone field-text--max">
+              <span>Номер телефона</span>
               <input type="tel" name="phone" placeholder="Номер, пожалуйста">
             </label>
-            <label class="input-text registration__input-text registration__input-text--tel-email">
-              <span>
-                Адрес почты:
-              </span>
-              <input type="email" name="email" placeholder="Введите почту *" required>
+
+            <label class="order-form__field field-text field-text--email field-text--max">
+              <span>Адрес почты</span>
+              <input type="mail" name="email" placeholder="Введите почту *" required>
             </label>
-          </fieldset>
-          <fieldset class="registration__fieldset registration__fieldset--bg-gray-second">
-            <legend class="legend-text registration__legend-text">
-              С каким приложением путешествовали?
-            </legend>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="radio" name="choice" value="Pink для iOS" checked>
-              <span>
-                Pink для iOS
-              </span>
+          </div>
+
+          <div class="order-form__radio">
+            <h3 class="order-form__title">С каким приложением путешествовали?</h3>
+
+            <label class="order-form__choice choice choice--radio">
+              <input type="radio" name="radio" value="1" checked>
+              <span>Pink для iOS</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="radio" name="choice" value="Pink на Andriod">
-              <span>
-                Pink на Android
-              </span>
+
+            <label class="order-form__choice choice choice--radio">
+              <input type="radio" name="radio" value="2">
+              <span>Pink на Android</span>
             </label>
-            <label class="choice registration__choice">
-              <input class="visually-hidden" type="radio" name="choice" value="Windows Phone">
-              <span>
-                Windows Phone
-              </span>
+
+            <label class="order-form__choice choice choice--radio">
+              <input type="radio" name="radio" value="3">
+              <span>Windows Phone</span>
             </label>
-          </fieldset>
-          <fieldset class="registration__fieldset registration__fieldset--notice">
-            <legend class="legend-text registration__legend-text">Опишите свои эмоции</legend>
-            <div class="registration__notice-text-wraper">
-              <textarea name="notice-text" class="notice-text registration__notice-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-          </fieldset>
-          <button type="submit" class="button registration__button">
-            Отправить форму
-          </button>
-          <small class="registration__required-fields-text"><span>*</span> — обязательные <span>для заполнения</span> поля</small>
+          </div>
+
+          <div class="order-form__emotions">
+            <h3 class="order-form__title">Опишите свои эмоции</h3>
+
+            <label for="" class="order-form__textarea field-text">
+              <textarea name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </label>
+          </div>
+
+          <div class="order-form__box">
+            <button type="submit" class="order-form__btn button">Отправить форму</button>
+
+            <p class="order-form__required"><span>*</span> — обязательные <i>для заполнения</i> поля</p>
+          </div>
         </form>
       </section>
     </main>

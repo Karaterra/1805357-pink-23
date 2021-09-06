@@ -1,0 +1,346 @@
+.order-form {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 280px;
+}
+
+.order-form__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.order-form__text span {
+  display: none;
+}
+
+.order-form__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-red;
+  margin-bottom: 15px;
+}
+
+.order-form__contacts .order-form__title {
+  display: none;
+}
+
+.order-form__check {
+  margin: 0 -20px;
+  margin-top: 41px;
+  padding: 25px 20px;
+  background-color: $basic-gray;
+  padding-bottom: 47px;
+}
+
+.order-form__check .order-form__title {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+}
+
+.order-form__choice:not(:last-child) {
+  margin-bottom: 52px;
+}
+
+.order-form__field:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.order-form__contacts {
+  margin-top: 32px;
+}
+
+.order-form__radio {
+  margin: 0 -20px;
+  margin-top: 41px;
+  padding: 25px 20px;
+  padding-bottom: 47px;
+  background-color: $basic-gray;
+}
+
+.order-form__radio .order-form__title {
+  margin-bottom: 40px;
+}
+
+.order-form__radio .order-form__choice:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+.order-form__emotions {
+  margin-top: 37px;
+  margin-bottom: 49px;
+}
+
+.order-form__btn {
+  display: block;
+  width: 100%;
+}
+
+.order-form__required {
+  margin-top: 36px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+}
+
+.order-form__required span {
+  color: $basic-red;
+}
+
+.order-form__required i {
+  font-style: normal;
+  display: none;
+}
+
+.order-form__textarea textarea {
+  height: 201px;
+}
+
+@include tablet {
+  .order-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-form__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 77px;
+    order: -4;
+  }
+
+  .order-form__person {
+    order: -3;
+  }
+
+  .order-form__radio {
+    background-color: transparent;
+    border: 2px solid $basic-border;
+    border-radius: 2px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 64px;
+    padding: 58px;
+    order: -2;
+  }
+
+  .order-form__radio .order-form__title {
+    width: 369px;
+  }
+
+  .order-form__title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $basic-white;
+    top: -15px;
+  }
+
+  .order-form__text span {
+    display: block;
+  }
+
+  .order-form__field:not(:last-child) {
+    margin-bottom: 52px;
+  }
+
+  .order-form__check {
+    position: relative;
+    margin-top: 66px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: transparent;
+    border: 2px solid $basic-border;
+    border-radius: 2px;
+    padding-top: 57px;
+    padding-bottom: 52px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
+  .order-form__check .order-form__title {
+    width: 436px;
+  }
+
+  .order-form__contacts {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid $basic-border;
+    border-radius: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 46px;
+    padding-bottom: 27px;
+    margin-top: 66px;
+    order: -1;
+  }
+
+  .order-form__contacts .order-form__title {
+    display: block;
+    width: 260px;
+  }
+
+  .order-form__contacts .order-form__field:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .order-form__emotions {
+    position: relative;
+    margin-top: 67px;
+    margin-bottom: 66px;
+    background-color: transparent;
+    border: 2px solid $basic-border;
+    border-radius: 2px;
+    padding-top: 43px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 51px;
+  }
+
+  .order-form__textarea textarea {
+    height: 194px;
+  }
+
+  .order-form__emotions .order-form__title {
+    display: block;
+    width: 260px;
+  }
+
+  .order-form__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-form__btn {
+    max-width: 300px;
+  }
+
+  .order-form__required {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@include desktop {
+  .order-form {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 980px;
+  }
+
+  .order-form__text {
+    width: 756px;
+    margin-bottom: 79px;
+  }
+
+  .order-form__text span {
+    display: inline;
+  }
+
+  .order-form__person {
+    margin-top: 10px;
+    width: 437px;
+  }
+
+  .order-form__field:not(:last-child) {
+    margin-bottom: 54px;
+  }
+
+  .order-form__radio {
+    width: 435px;
+    margin-top: 0;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .order-form__contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+    padding-bottom: 11px;
+  }
+
+  .order-form__contacts .order-form__field {
+    width: 375px;
+  }
+
+  .order-form__contacts .order-form__field:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .order-form__check {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 8px;
+  }
+
+  .order-form__check .order-form__choice {
+    margin-bottom: 52px;
+  }
+
+  .order-form__check .order-form__choice:nth-of-type(3) {
+    order: 1;
+  }
+
+  .order-form__check .order-form__choice:nth-of-type(5) {
+    margin-right: 8px;
+    order: 2;
+  }
+
+  .order-form__check .order-form__choice:nth-of-type(2) {
+    order: 3;
+  }
+
+  .order-form__check .order-form__choice:nth-of-type(4) {
+    margin-left: 25px;
+    order: 4;
+  }
+
+  .order-form__check .order-form__choice:nth-of-type(6) {
+    order: 5;
+  }
+
+  .order-form__emotions {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 43px;
+    margin-top: 65px;
+  }
+
+  .order-form__textarea textarea {
+    height: 128px;
+    padding: 13px 18px;
+  }
+
+  .order-form__box {
+    width: 100%;
+  }
+
+  .order-form__btn {
+    width: 300px;
+  }
+
+  .order-form__required i {
+    display: inline;
+  }
+}
