@@ -1,8 +1,8 @@
 .input-text {
   display: block;
-  margin-bottom: 21px;
 
   span {
+    display: block;
     line-height: 30px;
     color: $basic-red;
     text-transform: uppercase;
@@ -13,7 +13,7 @@
     font-size: 18px;
     line-height: 30px;
     color: $basic-text;
-    padding: 15px 0 16px 20px;
+    padding: 14px 70px 15px 20px;
     border: 2px solid $basic-border;
     border-radius: 1px;
     min-width: 280px;
@@ -34,11 +34,13 @@
       &[type="tel"] {
         background: url("../img/phone-icon.svg") no-repeat right top;
         background-size: contain;
+        width: 84%;
       }
 
       &[type="email"] {
         background: url("../img/mail-icon.svg") no-repeat right top;
         background-size: contain;
+        width: 84%;
       }
     }
   }

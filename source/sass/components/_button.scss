@@ -1,14 +1,29 @@
 .button {
-  padding: 13px;
+  padding: 14px 0 15px 0;
   min-width: 280px;
   min-height: 59px;
   font-weight: 700;
   font-size: 18px;
+  font-family: inherit;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   background-color: $basic-button;
   border: 2px solid $basic-button;
-  border-radius: 1px;
+  border-radius: 2px;
   color: $basic-white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-button-hover;
+  }
+
+  &:active {
+    color: $basic-button-light;
+  }
+
+  &:disabled {
+    background-color: $basic-border;
+    border: 2px solid $basic-border;
+  }
 }

@@ -37,12 +37,14 @@
 
   &--contest {
     line-height: 33px;
-    padding-bottom: 84px;
+    padding-bottom: 77px;
+    padding-top: 6px;
   }
 
   &--registration {
-    padding-bottom: 51px;
+    padding-bottom: 44px;
     line-height: 33px;
+    padding-top: 6px;
   }
 }
 
@@ -125,7 +127,7 @@
       display: block;
       min-height: 330px;
       background: none;
-      padding-bottom: 74px;
+      padding-bottom: 54px;
     }
   }
 
@@ -145,13 +147,15 @@
     &--contest {
       font-size: 50px;
       line-height: 68px;
-      padding-top: 81px;
+      padding-top: 66px;
+      padding-left: 0;
     }
 
     &--registration {
       font-size: 50px;
       line-height: 68px;
-      padding-top: 81px;
+      padding-top: 67px;
+      padding-left: 0;
     }
   }
 
@@ -230,12 +234,18 @@
 
 
     &--contest {
-      padding-top: 54px;
+      padding-top: 60px;
       padding-bottom: 0;
+      margin-left: 19px;
     }
 
     &--registration {
-      padding-top: 54px;
+      padding-top: 59px;
+      margin-left: 19px;
+
+      br:first-child {
+        display: none;
+      }
     }
   }
 

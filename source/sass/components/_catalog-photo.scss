@@ -1,12 +1,10 @@
 .catalog-photo {
   min-width: 320px;
   width: 100%;
-  margin: 0 0 20px 0;
 
   img {
     display: block;
-    object-fit: contain;
-    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -14,19 +12,20 @@
   display: block;
   background-color: $basic-gray;
   margin: 0 auto;
-  padding: 26px 17px;
-  min-height: 150px;
+  padding: 18px 12px 17px 17px;
   width: 280px;
 
   &--panorama {
     margin: 0 20px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: 19px;
     width: auto;
   }
 }
 
 .catalog-photo__username {
   font-weight: 700;
-  margin-right: 3px;
+  padding-right: 0;
 }
 
 .catalog-photo__time-creation {
@@ -37,8 +36,8 @@
 }
 
 .catalog-photo__text {
-  margin-bottom: 25px;
-  height: auto;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .catalog-photo__like {
@@ -56,31 +55,177 @@
 
 @include tablet {
   .catalog-photo__wrapper-text {
-    display: block;
     width: 300px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    padding: 22px 0 24px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
 
     &--panorama {
       width: auto;
       margin-bottom: 20px;
       margin-left: 20px;
       margin-right: 20px;
+      margin-top: 3px;
+      padding-bottom: 5px;
+
+      .catalog-photo__like {
+        padding-right: 29px;
+        padding-top: 6px;
+        margin: 0;
+        order: 4;
+      }
+
+      .catalog-photo__like-count {
+        padding-right: 18px;
+        margin: 0;
+        order: 3;
+        flex-grow: 0;
+      }
+
+      .catalog-photo__text {
+        margin-bottom: 20px;
+        margin-top: -6px;
+        order: 5;
+        height: 100%;
+      }
+
+      .catalog-photo__time-creation {
+        order: 2;
+        flex-grow: 1;
+      }
     }
   }
 
   .catalog-photo {
     display: block;
-    margin-bottom: 0;
+  }
+
+  .catalog-photo__username {
+    margin-right: 2px;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .catalog-photo__time-creation {
+    order: 2;
+    flex-grow: 1;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+
+  .catalog-photo__text {
+    margin-bottom: 10px;
+    margin-top: -6px;
+    order: 3;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 49px;
+  }
+
+  .catalog-photo__like {
+    margin-right: 29px;
+    margin-top: 8px;
+    order: 5;
+    flex-grow: 0;
+  }
+
+  .catalog-photo__like-count {
+    font-size: 12px;
+    color: $basic-red;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    padding-top: 1px;
+    order: 4;
+    flex-grow: 1;
   }
 }
 
 @include desktop {
   .catalog-photo__wrapper-text {
+    margin-bottom: 32px;
+    padding: 24px 20px 22px 27px;
+
     &--panorama {
       width: 940px;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      padding-top: 24px;
+      padding-left: 27px;
+      padding-bottom: 0;
+
+      .catalog-photo__like {
+        padding-right: 11px;
+        padding-top: 6px;
+        margin: 0;
+        order: 4;
+      }
+
+      .catalog-photo__like-count {
+        padding-right: 16px;
+        margin: 0;
+        order: 3;
+        flex-grow: 0;
+      }
+
+      .catalog-photo__text {
+        margin-bottom: -1px;
+        margin-top: -6px;
+        order: 5;
+        height: 100%;
+      }
+
+      .catalog-photo__time-creation {
+        order: 2;
+        flex-grow: 1;
+      }
     }
+  }
+
+  .catalog-photo {
+    display: block;
+  }
+
+  .catalog-photo__username {
+    margin-right: 2px;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .catalog-photo__time-creation {
+    order: 2;
+    flex-grow: 1;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+
+  .catalog-photo__text {
+    margin-bottom: 11px;
+    margin-top: -6px;
+    order: 3;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 49px;
+  }
+
+  .catalog-photo__like {
+    margin-right: 11px;
+    margin-top: 6px;
+    order: 5;
+    flex-grow: 0;
+  }
+
+  .catalog-photo__like-count {
+    font-size: 12px;
+    color: $basic-red;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    padding-top: 1px;
+    order: 4;
+    flex-grow: 1;
   }
 }

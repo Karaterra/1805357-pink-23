@@ -1,0 +1,77 @@
+.field-text {
+  display: block;
+
+  span {
+    font-size: 14px;
+    line-height: 30px;
+    color: $basic-red;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display: block;
+    padding-left: 23px;
+  }
+
+  input,
+  textarea {
+    border: 2px solid $basic-border;
+    border-radius: 1px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $basic-text;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+@include tablet {
+  .field-text {
+    display: flex;
+    align-items: center;
+
+    &--phone {
+      input {
+        background: url("../img/phone-icon.svg") no-repeat right top;
+        background-size: contain;
+        padding-right: 65px;
+      }
+    }
+
+    &--email {
+      input {
+        background: url("../img/mail-icon.svg") no-repeat right top;
+        background-size: contain;
+        padding-right: 65px;
+      }
+    }
+
+    span {
+      padding-left: 0;
+      margin-right: 20px;
+    }
+
+    input {
+      flex-grow: 1;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      transform: translateY(-4px);
+    }
+
+    &--max {
+      flex-wrap: wrap;
+
+      span {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 0;
+        margin-right: 0;
+        padding-left: 17px;
+        order: 1;
+      }
+    }
+  }
+}

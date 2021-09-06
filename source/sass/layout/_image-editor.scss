@@ -6,10 +6,11 @@
 }
 
 .image-editor__title {
-  margin: 54px 20px 54px 20px;
+  margin: 44px 20px 44px 20px;
   padding: 0;
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
   color: $basic-text;
   text-align: center;
 }
@@ -18,7 +19,7 @@
   min-width: 320px;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 20px;
   background-color: $basic-gray;
   object-fit: contain;
@@ -29,7 +30,8 @@
   object-fit: contain;
   background-color: $basic-gray;
   padding-bottom: 29px;
-  padding-top: 57px;
+  padding-top: 0;
+  margin-bottom: 2px;
 
   a {
     min-width: 280px;
@@ -46,11 +48,16 @@
 
   li {
     display: inline-block;
-    margin-right: 35px;
     vertical-align: middle;
+    text-align: center;
+
+    &:nth-child(2) {
+      margin-right: 24px;
+      margin-left: 30px;
+    }
 
     &:last-child {
-      margin-right: 0;
+      margin-right: 8px;
     }
   }
 }
@@ -60,23 +67,31 @@
   height: 48px;
   border: none;
   padding: 0;
-  opacity: 0.3;
   cursor: pointer;
+  background-color: transparent;
 
-  &--current path {
-    fill: $basic-red;
+  path {
+    fill: $basic-text;
+    opacity: 0.3;
   }
 
   &--current {
-    opacity: 1;
+    path {
+      fill: $basic-red;
+      opacity: 1;
+    }
+  }
+
+  &:hover:not(&--current) path {
+    opacity: 0.5;
   }
 }
 
 .image-editor__range {
   width: 100%;
-  padding-top: 39px;
+  padding-top: 32px;
   margin-bottom: 38px;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
   position: relative;
   border-bottom: 1px solid $basic-border;
 
@@ -90,7 +105,7 @@
 .image-editor__bar {
   margin: 0 auto;
   padding: 0;
-  width: 280px;
+  width: 240px;
   height: 2px;
   background-color: $basic-black;
   position: relative;
@@ -99,24 +114,29 @@
 .image-editor__toggle {
   position: absolute;
   top: -5px;
-  left: 100px;
+  left: 190px;
   cursor: pointer;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border: 2px solid $basic-red;
   background-color: $basic-white;
   border-radius: 50%;
+
+  &:active {
+    background-color: $basic-red;
+  }
 }
 
 .image-editor__button {
   min-width: 280px;
   margin: 0 auto;
   margin-bottom: 12px;
-  padding: 17px 35px;
+  padding: 16px 35px;
   border: solid 3px $basic-red;
   border-radius: 29px;
   background: transparent;
   text-align: center;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -129,17 +149,44 @@
     color: $basic-text;
     cursor: auto;
     opacity: 0.1;
+
+    &:hover {
+      background-color: transparent;
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: $basic-text;
+      color: $basic-white;
+      opacity: 0.3;
+    }
+  }
+
+  &:hover:not(&--disable) {
+    background-color: $basic-red;
+    color: $basic-white;
+  }
+
+  &:active:not(&--disable) {
+    color: $basic-button-light;
   }
 }
 
 @include tablet {
+  .image-editor {
+    margin-bottom: 12px;
+  }
+
   .image-editor__title {
-    margin: 73px 20px 78px 20px;
+    margin: 41px 20px 70px 20px;
     font-size: 18px;
   }
 
   .image-editor__form {
     min-width: 660px;
+    padding-top: 37px;
+    padding-bottom: 12px;
+    margin-bottom: 9px;
     display: grid;
     grid-template-columns: min-content 1fr;
   }
@@ -163,35 +210,51 @@
       justify-content: flex-start;
       align-items: center;
       border-bottom: 1px solid $basic-border;
-      margin-right: 25px;
-      margin-bottom: 17px;
-      padding-bottom: 14px;
-      padding-left: 10px;
+      margin-right: 20px;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      margin-top: -4px;
+
+      &:nth-child(2) {
+        margin-right: 20px;
+        margin-left: 0;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+      }
 
       &:last-child {
-        margin-right: 25px;
-        margin-bottom: 39px;
+        margin-right: 20px;
+        margin-bottom: 68px;
+        padding-bottom: 11px;
       }
 
       &:last-child svg {
-        width: 20px;
+        width: 16px;
       }
     }
   }
 
   .image-editor__icon {
-    padding: 0;
     opacity: 1;
     align-self: center;
-    padding-right: 10px;
+    margin-right: 16px;
+    padding-left: 0;
 
     svg {
       width: 24px;
       height: auto;
+      margin-top: 4px;
+      margin-left: 2px;
     }
 
-    & path {
+    path {
       fill: $basic-red;
+      opacity: 1;
+    }
+
+    &:hover:not(&--current) path {
+      opacity: 1;
     }
   }
 
@@ -201,7 +264,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    padding-right: 10px;
 
     &--basic {
       display: none;
@@ -215,72 +277,116 @@
   }
 
   .image-editor__bar {
-    width: 228px;
+    width: 202px;
   }
 
   .image-editor__button {
     grid-column: 2 / 3;
     display: block;
     margin: 0 auto;
-    margin-bottom: 10px;
+    line-height: 16px;
+    margin-bottom: 25px;
+    padding: 16px 0 16px 0;
+    min-width: 260px;
+  }
+
+  .image-editor__toggle {
+    left: 160px;
+
+    &--second {
+      left: 26px;
+    }
+
+    &--third {
+      left: 97px;
+    }
   }
 }
 
 @include desktop {
+  .image-editor {
+    margin-bottom: 51px;
+  }
+
   .image-editor__title {
-    margin: 67px 20px 75px 20px;
+    margin: 4px 20px 67px 20px;
   }
 
   .image-editor__form {
     margin: 0 auto;
     width: 940px;
+    grid-template-rows: min-content 1fr;
+    margin-bottom: 32px;
+    padding-bottom: 17px;
   }
 
   .image-editor__wrapper {
     grid-column: 1 / 2;
-    grid-row: span 4;
+    grid-row: span 2;
     width: 340px;
     height: auto;
-    margin-left: 80px;
+    margin-left: 60px;
   }
 
   .image-editor__icons-list {
     text-align: center;
     margin-top: 20px;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
     width: auto;
 
     li {
-      width: auto;
+      width: 405px;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
+      align-content: flex-start;
       border-bottom: 1px solid $basic-border;
-      margin-right: 45px;
-      margin-bottom: 17px;
-      padding-bottom: 14px;
-      padding-left: 10px;
+      margin: 0;
+      padding: 0;
+      padding-right: 23px;
+      padding-bottom: 9px;
+      margin-top: -4px;
+
+      &:nth-child(2) {
+        margin: 0;
+        padding: 0;
+        padding-right: 23px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      &:nth-child(2) svg {
+        margin: 2px;
+        width: 48px;
+      }
 
       &:last-child {
-        margin-right: 45px;
-        margin-bottom: 39px;
+        margin: 0;
+        padding: 0;
+        padding-right: 23px;
+        padding-top: 7px;
+        padding-bottom: 15px;
+        margin-bottom: 35px;
       }
 
       &:last-child svg {
-        width: 38px;
+        margin: 7px 7px;
+        width: 33px;
       }
     }
   }
 
   .image-editor__icon {
-    padding: 0;
     opacity: 1;
-    align-self: center;
-    padding-right: 10px;
+    padding: 0;
+    margin: 0;
+    width: 48px;
+    height: auto;
 
     svg {
       width: 44px;
-      height: auto;
+      margin: 2px 2px;
     }
 
     & path {
@@ -291,10 +397,10 @@
   .image-editor__range {
     grid-column: 2 / 3;
     align-self: center;
-    margin: 0;
-    padding: 0;
     border: none;
-    padding-right: 10px;
+    padding: 0;
+    margin: 0;
+    width: 288px;
 
     &--basic {
       display: none;
@@ -302,14 +408,37 @@
   }
 
   .image-editor__bar {
-    width: 228px;
+    width: 288px;
   }
 
   .image-editor__button {
     grid-column: 2 / 3;
-    display: block;
+    grid-row: 2 / 3;
     margin: 0 auto;
     margin-bottom: 10px;
-    margin-right: 135px;
+    margin-right: 2px;
+    margin-top: 106px;
+    display: inline;
+    margin-left: 70px;
+    padding: 16px 0 16px 0;
+    min-width: 183px;
+    width: 183px;
+    height: 55px;
+
+    &:last-child {
+      margin-left: 297px;
+    }
+  }
+
+  .image-editor__toggle {
+    left: 235px;
+
+    &--second {
+      left: 36px;
+    }
+
+    &--third {
+      left: 137px;
+    }
   }
 }
