@@ -1,6 +1,12 @@
 .page-header {
   width: 100%;
-  background: $basic-white url("../img/back-660.jpg") no-repeat center top;
+  background: $basic-white url("../img/back-660.jpg") no-repeat 55% 0;
+  background-size: auto 662px;
+
+  @include retina {
+    background-image: url("../img/back-tablet-660-2x.jpg");
+    background-size: auto 662px;
+  }
 }
 
 .page-header__wrapper {
@@ -109,6 +115,16 @@
 }
 
 @include tablet {
+  .page-header {
+    background-repeat: no-repeat;
+    background-position: 51% 0;
+    background-size: auto 729px;
+
+    @include retina {
+      background-size: auto 729px;
+    }
+  }
+
   .page-header__logo {
     min-height: 23px;
     margin: 27px 0 36px 20px;
@@ -129,8 +145,13 @@
 
   .page-header {
     margin: 0 auto;
-    background: $basic-white url("../img/back-1220.jpg") no-repeat center top;
+    background: url("../img/back-1220.jpg") no-repeat center top;
     background-size: fill;
+
+    @include retina {
+      background: url("../img/back-desktop-1200@2x.jpg") no-repeat center top;
+      background-size: fill;
+    }
   }
 
   .page-header__over-wrapper {

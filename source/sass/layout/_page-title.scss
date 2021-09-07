@@ -14,6 +14,10 @@
     background: none;
     min-height: 170px;
   }
+
+  @include retina {
+    background-image: url("../img/hand-smartphone-320@2x.png");
+  }
 }
 
 .page-title__wrapper {
@@ -129,6 +133,10 @@
       background: none;
       padding-bottom: 54px;
     }
+
+    @include retina {
+      background-image: url("../img/hand-smartphone-660@2x.png");
+    }
   }
 
   .page-title__slogan {
@@ -221,6 +229,10 @@
       display: block;
       min-height: 284px;
       background: none;
+    }
+
+    @include retina {
+      background-image: url("../img/hand-smartphone-1200@2x.png");
     }
   }
 

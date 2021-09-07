@@ -1,6 +1,7 @@
 $mobile-max-width: 659px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+$screen-density: 2dppx;
 
 @mixin mobile {
   @media (max-width: $mobile-max-width) {
@@ -16,6 +17,12 @@ $desktop-width: 1200px;
 
 @mixin desktop {
   @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $screen-density) {
     @content;
   }
 }
