@@ -150,7 +150,7 @@
 
     @include retina {
       background: url("../img/back-desktop-1200@2x.jpg") no-repeat center top;
-      background-size: fill;
+      background-size: auto 853px;
     }
   }
 
