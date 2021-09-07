@@ -4,9 +4,11 @@
   padding-top: 22px;
   display: block;
   background: url("../img/hand-smartphone-320@1x.png") no-repeat center 110px;
+  background-size: auto 286px;
 
   @include retina {
     background: url("../img/hand-smartphone-320@2x.png") no-repeat center 110px;
+    background-size: auto 286px;
   }
 
   &--contest {
@@ -119,6 +121,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: url("../img/hand-smartphone-760.png") no-repeat 60% 74px;
+    background-size: auto 545px;
     padding-top: 0;
 
     &--contest {
@@ -136,6 +139,7 @@
 
     @include retina {
       background-image: url("../img/hand-smartphone-660@2x.png");
+      background-size: auto 545px;
     }
   }
 
@@ -217,6 +221,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: url("../img/hand-smartphone-1200.png") no-repeat 97% 99px;
+    background-size: auto 645px;
     padding-top: 0;
 
     &--contest {
@@ -233,6 +238,7 @@
 
     @include retina {
       background-image: url("../img/hand-smartphone-1200@2x.png");
+      background-size: auto 645px;
     }
   }
 
