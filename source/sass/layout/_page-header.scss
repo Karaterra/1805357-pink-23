@@ -1,10 +1,10 @@
 .page-header {
   width: 100%;
-  background: $basic-white url("../img/back-660.jpg") no-repeat 55% 0;
+  background: $basic-white url("../img/back-tablet-660@1x.jpg") no-repeat 55% 0;
   background-size: auto 662px;
 
   @include retina {
-    background-image: url("../img/back-tablet-660-2x.jpg");
+    background-image: $basic-white url("../img/back-tablet-660@2x.jpg");
     background-size: auto 662px;
   }
 }
@@ -62,7 +62,7 @@
   position: relative;
 
   button:hover {
-    background-color: #cfabab;
+    background-color: $special-button-hover;
   }
 
   &--closed {

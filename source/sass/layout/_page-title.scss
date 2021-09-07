@@ -3,7 +3,11 @@
   min-height: 396px;
   padding-top: 22px;
   display: block;
-  background: url("../img/hand-smartphone-320.png") no-repeat center 110px;
+  background: url("../img/hand-smartphone-320@1x.png") no-repeat center 110px;
+
+  @include retina {
+    background: url("../img/hand-smartphone-320@2x.png") no-repeat center 110px;
+  }
 
   &--contest {
     background: none;
@@ -13,10 +17,6 @@
   &--registration {
     background: none;
     min-height: 170px;
-  }
-
-  @include retina {
-    background-image: url("../img/hand-smartphone-320@2x.png");
   }
 }
 
