@@ -146,7 +146,7 @@
   .page-header {
     margin: 0 auto;
     background: url("../img/back-1220.jpg") no-repeat center top;
-    background-size: fill;
+    background-size: auto 853px;
 
     @include retina {
       background: url("../img/back-desktop-1200@2x.jpg") no-repeat center top;
