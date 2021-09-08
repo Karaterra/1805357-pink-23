@@ -95,6 +95,12 @@
     min-height: auto;
     padding: 76px 20px 9px 330px;
     background: url("../img/smartphone-smile-760.png") no-repeat 5% -10%;
+    background-size: auto 547px;
+
+    @include retina {
+      background: url("../img/smartphone-smile-tablet@2x.png") no-repeat 5% -10%;
+      background-size: auto 547px;
+    }
   }
 
   .features__item {
@@ -181,7 +187,7 @@
   }
 
   .features__name {
-    margin: 98px 40px 10px 40px;
+    margin: -89px 40px 10px 40px;
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
