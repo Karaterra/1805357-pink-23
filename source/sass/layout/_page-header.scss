@@ -27,18 +27,15 @@
   min-height: 23px;
   margin: 22px 0 14px 20px;
   flex-grow: 1;
+  cursor: pointer;
 
-  &:hover {
-    path {
-      fill: $basic-red;
-    }
+  &:hover svg {
+    fill: $basic-red;
   }
 
-  &:active {
-    path {
-      fill: $basic-white;
-      opacity: 0.3;
-    }
+  &:active svg {
+    fill: $basic-white;
+    opacity: 0.3;
   }
 }
 
@@ -49,6 +46,7 @@
 
 .page-header__logo-svg-second {
   display: inline-block;
+  fill: $basic-white;
 }
 
 .page-header__toggle {
@@ -133,6 +131,7 @@
   .page-header__logo-svg-first {
     display: inline-block;
     margin-right: 8px;
+    fill: $basic-white;
   }
 }
 
@@ -141,6 +140,32 @@
     margin-right: 153px;
     margin-left: 130px;
     flex-grow: 0;
+
+    &:hover .page-header__logo-svg-third {
+      --color-1: #d22856;
+      --color-2: #d22856;
+      --color-3: #d22856;
+      --color-4: #d22856;
+      --color-5: #d22856;
+      --color-6: #d22856;
+      --color-7: #d22856;
+      --color-8: #d22856;
+      --color-9: #d22856;
+      --color-10: #d22856;
+    }
+
+    &:active .page-header__logo-svg-third {
+      --color-1: #ffffff;
+      --color-2: #ffffff;
+      --color-3: #ffffff;
+      --color-4: #ffffff;
+      --color-5: #ffffff;
+      --color-6: #ffffff;
+      --color-7: #ffffff;
+      --color-8: #ffffff;
+      --color-9: #ffffff;
+      --color-10: #ffffff;
+    }
   }
 
   .page-header {
@@ -167,6 +192,16 @@
 
   .page-header__logo-svg-third {
     display: inline-block;
+    --color-1: #ffffff;
+    --color-2: #ffffff;
+    --color-3: #ffffff;
+    --color-4: #ffffff;
+    --color-5: #d22856;
+    --color-6: #ffffff;
+    --color-7: #ffffff;
+    --color-8: #d22856;
+    --color-9: #d22856;
+    --color-10: #d22856;
   }
 
   .page-header__logo-svg-first,

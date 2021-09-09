@@ -69,20 +69,16 @@
   padding: 0;
   cursor: pointer;
   background-color: transparent;
-
-  path {
-    fill: $basic-text;
-    opacity: 0.3;
-  }
+  fill: $basic-text;
+  opacity: 0.3;
 
   &--current {
-    path {
-      fill: $basic-red;
-      opacity: 1;
-    }
+    fill: $basic-red;
+    opacity: 1;
   }
 
-  &:hover:not(&--current) path {
+  &:hover:not(&--current) {
+    fill: $basic-text;
     opacity: 0.5;
   }
 }
@@ -240,6 +236,7 @@
     align-self: center;
     margin-right: 16px;
     padding-left: 0;
+    fill: $basic-red;
 
     svg {
       width: 24px;
@@ -248,13 +245,14 @@
       margin-left: 2px;
     }
 
-    path {
-      fill: $basic-red;
-      opacity: 1;
+    &:hover svg {
+      fill: $basic-text;
+      opacity: 0.3;
     }
 
-    &:hover:not(&--current) path {
-      opacity: 1;
+    &:active svg {
+      fill: $basic-text;
+      opacity: 0.5;
     }
   }
 
@@ -383,14 +381,21 @@
     margin: 0;
     width: 48px;
     height: auto;
+    fill: $basic-red;
 
     svg {
       width: 44px;
       margin: 2px 2px;
     }
 
-    & path {
-      fill: $basic-red;
+    &:hover svg {
+      fill: $basic-text;
+      opacity: 0.3;
+    }
+
+    &:active svg {
+      fill: $basic-text;
+      opacity: 0.5;
     }
   }
 
