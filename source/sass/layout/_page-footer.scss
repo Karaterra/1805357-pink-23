@@ -11,17 +11,11 @@
   &:hover .page-footer__logo-svg-first {
     --color-1: #d22856;
     --color-2: #d22856;
-    --color-3: #d22856;
-    --color-4: #d22856;
-    --color-5: #d22856;
   }
 
   &:active .page-footer__logo-svg-first {
     --color-1: #283645;
-    --color-2: #283645;
-    --color-3: #283645;
-    --color-4: #283645;
-    --color-5: #d22856;
+    --color-2: #d22856;
     opacity: 0.3;
   }
 }
@@ -31,10 +25,7 @@
   display: block;
   margin-bottom: 38px;
   --color-1: #283645;
-  --color-2: #283645;
-  --color-3: #283645;
-  --color-4: #283645;
-  --color-5: #d22856;
+  --color-2: #d22856;
 }
 
 .page-footer__logo-svg-second {
@@ -87,25 +78,13 @@
       --color-2: #d22856;
       --color-3: #d22856;
       --color-4: #d22856;
-      --color-5: #d22856;
-      --color-6: #d22856;
-      --color-7: #d22856;
-      --color-8: #d22856;
-      --color-9: #d22856;
-      --color-10: #d22856;
     }
 
     &:active .page-footer__logo-svg-second {
       --color-1: #283645;
-      --color-2: #283645;
-      --color-3: #283645;
+      --color-2: #d22856;
+      --color-3: #d22856;
       --color-4: #283645;
-      --color-5: #d22856;
-      --color-6: #d22856;
-      --color-7: #d22856;
-      --color-8: #283645;
-      --color-9: #283645;
-      --color-10: #283645;
       opacity: 0.3;
     }
   }
@@ -115,15 +94,9 @@
     margin-left: 130px;
     margin-bottom: 15px;
     --color-1: #283645;
-    --color-2: #283645;
-    --color-3: #283645;
+    --color-2: #d22856;
+    --color-3: #d22856;
     --color-4: #283645;
-    --color-5: #d22856;
-    --color-6: #d22856;
-    --color-7: #d22856;
-    --color-8: #283645;
-    --color-9: #283645;
-    --color-10: #283645;
   }
 
   .page-footer__logo-svg-first {
