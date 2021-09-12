@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
@@ -98,8 +99,8 @@
     <main class="page-main">
       <section class="features">
         <h2 class="title features__title">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам<br> предложить!</p>
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам<br> предложить!</span>
         </h2>
         <div class="features__list-wrap">
           <ul class="features__list">
@@ -148,7 +149,7 @@
         <div class="features__item-appendix-wrap">
           <div class="features__item-appendix">
             <h3>
-              Эффект<br> на 24 часа!
+              Эффект<br>&nbsp;на 24 часа!
             </h3>
             <p>
               Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
@@ -163,6 +164,28 @@
         <div class="reviews__slider slider">
           <ul class="slider__list">
             <li class="slider__item">
+              <h3 class="slider__name">
+                Николай Петров
+              </h3>
+              <small class="slider__age-profession">
+                25 лет, водитель трамвая
+              </small>
+              <p class="slider__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="slider__item visually-hidden">
+              <h3 class="slider__name">
+                Николай Петров
+              </h3>
+              <small class="slider__age-profession">
+                25 лет, водитель трамвая
+              </small>
+              <p class="slider__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="slider__item visually-hidden">
               <h3 class="slider__name">
                 Николай Петров
               </h3>
@@ -239,15 +262,15 @@
             </td>
               <td class="slider-tariffs__td slider-tariffs__td--yes">
                 <span>Розовый фильтр</span>
-                <img src="img/yes.svg" width="auto" height="auto" alt="В наличии">
+                <img src="img/yes.svg" width="31" height="21" alt="В наличии">
               </td>
               <td class="slider-tariffs__td slider-tariffs__td--yes">
                 <span>Розовый фильтр</span>
-                <img src="img/yes.svg" width="auto" height="auto" alt="В наличии">
+                <img src="img/yes.svg" width="31" height="21" alt="В наличии">
               </td>
               <td class="slider-tariffs__td slider-tariffs__td--yes">
                 <span>Розовый фильтр</span>
-                <img src="img/yes.svg" width="auto" height="auto" alt="В наличии">
+                <img src="img/yes.svg" width="31" height="21" alt="В наличии">
               </td>
             </tr>
             <tr>
@@ -256,15 +279,15 @@
             </td>
               <td class="slider-tariffs__td slider-tariffs__td--no">
                 <span>Смайлики</span>
-                <img src="img/no.svg" width="auto" height="auto" alt="Нет в наличии">
+                <img src="img/no.svg" width="27" height="27" alt="Нет в наличии">
               </td>
               <td class="slider-tariffs__td slider-tariffs__td--yes">
                 <span>Смайлики</span>
-                <img src="img/yes.svg" width="auto" height="auto" alt="В наличии">
+                <img src="img/yes.svg" width="31" height="21" alt="В наличии">
               </td>
               <td class="slider-tariffs__td slider-tariffs__td--yes">
                 <span>Смайлики</span>
-                <img src="img/yes.svg" width="auto" height="auto" alt="В наличии">
+                <img src="img/yes.svg" width="31" height="21" alt="В наличии">
               </td>
             </tr>
             <tr>
@@ -273,15 +296,15 @@
             </td>
               <td class="slider-tariffs__td slider-tariffs__td--no">
                 <span>Комментарии</span>
-                <img src="img/no.svg" width="auto" height="auto" alt="Нет в наличии">
+                <img src="img/no.svg" width="27" height="27" alt="Нет в наличии">
               </td>
               <td class="slider-tariffs__td slider-tariffs__td--no">
                 <span>Комментарии</span>
-                <img src="img/no.svg" width="auto" height="auto" alt="Нет в наличии">
+                <img src="img/no.svg" width="27" height="27" alt="Нет в наличии">
               </td>
               <td class="slider-tariffs__td slider-tariffs__td--yes">
                 <span>Комментарии</span>
-                <img src="img/yes.svg" width="auto" height="auto" alt="В наличии">
+                <img src="img/yes.svg" width="31" height="21" alt="В наличии">
               </td>
             </tr>
           </table>
@@ -316,7 +339,7 @@
           <svg class="triangle contacts__triangle" width="100%" height="34">
             <use xlink:href="img/sprite.svg#contacts__triangle"></use>
           </svg>
-          <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630318673576!5m2!1sru!2sru" width="100%" height="auto" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630318673576!5m2!1sru!2sru" width="320" height="200" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>

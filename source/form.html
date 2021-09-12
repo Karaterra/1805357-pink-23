@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
@@ -135,7 +136,7 @@
 
             <label class="order-form__field field-text field-text--email field-text--max">
               <span>Адрес почты</span>
-              <input type="mail" name="email" placeholder="Введите почту *" required>
+              <input type="email" name="email" placeholder="Введите почту *" required>
             </label>
           </div>
 
@@ -161,7 +162,7 @@
           <div class="order-form__emotions">
             <h3 class="order-form__title">Опишите свои эмоции</h3>
 
-            <label for="" class="order-form__textarea field-text">
+            <label class="order-form__textarea field-text">
               <textarea name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
           </div>
