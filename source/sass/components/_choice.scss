@@ -20,6 +20,16 @@
     &:active + span::before {
       border: 2px solid $basic-red;
     }
+
+    &:disabled + span {
+      color: $basic-text;
+      opacity: 0.3;
+    }
+
+    &:disabled:hover + span::before,
+    &:disabled:active + span::before {
+      border: 2px solid $basic-border;
+    }
   }
 
   span {

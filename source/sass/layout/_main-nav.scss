@@ -4,7 +4,7 @@
   min-height: 255px;
   margin: 0 auto;
   position: absolute;
-  top: 67px;
+  top: 70px;
 
   &--closed {
     display: none;
@@ -23,7 +23,7 @@
 
 @include tablet {
   .main-nav {
-    top: 90px;
+    top: 110px;
 
     &--nojs {
       top: 0;

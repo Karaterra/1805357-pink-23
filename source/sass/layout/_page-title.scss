@@ -1,13 +1,13 @@
 .page-title {
   margin: 0 auto;
   min-height: 396px;
-  padding-top: 22px;
+  padding-top: 18px;
   display: block;
-  background: url("../img/hand-smartphone-320@1x.png") no-repeat center 110px;
+  background: url("../img/hand-smartphone-320@1x.png") no-repeat center 106px;
   background-size: auto 286px;
 
   @include retina {
-    background: url("../img/hand-smartphone-320@2x.png") no-repeat center 110px;
+    background: url("../img/hand-smartphone-320@2x.png") no-repeat center 106px;
     background-size: auto 286px;
   }
 

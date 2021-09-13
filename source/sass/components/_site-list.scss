@@ -4,15 +4,16 @@
   @include desktop {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     margin-right: 73px;
   }
 }
 
 .site-list__item {
-  min-height: 65px;
+  min-height: 64px;
   margin: 0 auto;
-  padding: 23px 0;
+  padding: 22px 0 21px 0;
   box-shadow: 0 -1px 0 $basic-black, inset 0 1px 0 $basic-border-light;
   background-color: $basic-text;
 
